@@ -65,7 +65,7 @@ to{transform:rotate(360deg)}
 }
 .text--folding [data-scroll='out'] .char{-webkit-transform:rotateX(90deg);transform:rotateX(90deg);-webkit-transform-origin:bottom;transform-origin:bottom;}
 /* ------------------------------------------------------------------------header start--------------------------------------------------------------- */
-.container{max-width:1260px;}
+.container{max-width:1280px;padding-left:24px;padding-right:25px;}
 header{height:90px;background:rgba(232,216,253,0.1);backdrop-filter:blur(7px);position:sticky;top:0;z-index:19;}
 header .row{height:90px;}
 header .social-icon{list-style:none;display:inline-flex;padding-left:0;margin-bottom:0;}
