@@ -1,0 +1,36 @@
+.i-pr-hero .image-line .img1{
+    position: absolute;
+    left: 81.73%;
+    right: 13.48%;
+    top: 78.78%;
+}
+.i-pr-hero .image-line .img2{
+    position: absolute;
+    left: 83.36%;
+    right: 12.14%;
+    top: 78.78%;
+}
+.i-pr-hero .image-line .img3{
+    position: absolute;
+left: 84.98%;
+right: 10.8%;
+top: 78.78%;
+
+}
+
+.i-pr-hero .content-box h1{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 47px;
+}
+
+
+.yellow-box .content-box{
+    width: 469px;
+}
+
+.migrate-section ul li{
+    width: 50%;
+}
