@@ -1,0 +1,7 @@
+.course .course-in .left-box{
+    background: #1C1E2F;
+    box-shadow: -3px -4px 10px rgba(255, 255, 255, 0.2), 4px 4px 10px rgba(0, 0, 0, 0.23);
+    border-radius: 50px;
+    color: white;
+    width: 20%;
+}
