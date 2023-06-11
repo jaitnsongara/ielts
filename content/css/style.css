@@ -569,7 +569,6 @@ header .mobile-menu {
     padding: 16px 40px;
     color: #fff;
     display: inline-block;
-    margin-right: 20px;
     letter-spacing: 1px;
     transition: 0.4s;
     background: linear-gradient(93.12deg, #F9508B 0%, #D91359 100%);
@@ -4501,7 +4500,13 @@ footer {
     }
 
     .migrate-section .content-box {
-        margin-top: 40px;
+        margin-top: 0px;
+    }
+    .p-70 {
+        padding: 35px 0;
+    }
+    .button {
+        font-size: 12px;
     }
 
     .immigration-need .img-box {
@@ -5140,7 +5145,7 @@ footer {
     }
 
     .yellow-box {
-        padding: 55px 0;
+        padding: 32px 0;
     }
 
     .in-hand-section h2 {
