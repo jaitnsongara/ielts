@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="content/css/bootstrap.min.css">
     <link rel="stylesheet" href="content//css/owl.carousel.min.css">
     <link rel="stylesheet" href="content/css/style.css">
+    <link rel="stylesheet" href="content/css/quiz.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -273,6 +275,39 @@
     </div>
  </div>
 
+
+<!-- Book Popup -->
+<div class="modal modalbook fade" id="bookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content p-5">
+            <h3 class="text-dark w-100 text-center">Book a session now.</h3>
+
+            <div class="row custom-fields" >
+                <div class="col-md-6 mt-4" >
+                    <label>Name</label>
+                    <input type="text" placeholder="Name.." class="form-control" />
+                </div>
+                <div class="col-md-6 mt-4" >
+                    <label>Email</label>
+                    <input type="email" placeholder="Email Address" class="form-control" />
+                </div>
+                <div class="col-md-6 mt-4" >
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="+91 ..." class="form-control" />
+                </div>
+                <div class="col-md-6 mt-4 " >
+                    <label>Visiting Date</label>
+                    <input type="date" placeholder="12-10-2023" class="form-control" />
+                </div>
+
+                <div class="col-md-12" >
+                    <button type="submit" class="border-0 button m-auto d-table mt-4" ><span>Book Now</span></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
  <div class="still-confused p-70">
     <div class="container">
         <div class="row">
@@ -280,7 +315,8 @@
                 <div class="content-box">
                     <h2>Still confused? Clear all the <span>queries</span> with our personalized <span>evaluation</span> and <span>counselling.</span></h2>
                     <div class="btn-box">
-                        <a class="pink-btn" href="#">Schedule session with expert</a>
+                        <button class="border-0 button" data-bs-toggle="modal"
+                        data-bs-target="#bookModal" ><span>Schedule session with expert</span></button>
                     </div>
                 </div>
             </div>
