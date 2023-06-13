@@ -616,12 +616,12 @@ position:relative;}
 .preparation-section{background:linear-gradient(217.4deg,#6B24D6 -177.66%,#A56EF4 61.53%);}
 .preparation-section h2{font-weight:400;font-size:32px;line-height:49px;text-transform:capitalize;color:#F3F3FE;}
 .preparation-section h2 span{font-weight:bold;font-family:var(--general);}
-.preparation-section .content-box ul li{font-weight:500;font-size:24px;line-height:25px;color:#F3F3FE;margin-top:25px;position:relative;padding-left:45px;}
+.preparation-section .content-box ul li{font-family: 'GeneralSans-Regular';font-weight:500;font-size:24px;line-height:25px;color:#F3F3FE;margin-top:25px;position:relative;padding-left:45px;}
 .preparation-section .content-box ul li:before{position:absolute;content:'';width:28px;height:24px;left:0;top:1px;background-image:url(../img/list-2.png);background-repeat:no-repeat;background-size:contain;}
 .preparation-section .btn-box a,.migrate-section .btn-box a{font-size:16px;color:#fff;text-transform:uppercase;}
 .preparation-section .btn-box,.migrate-section .btn-box{margin-top:50px;}
 .migrate-section h2{font-weight:400;font-size:36px;line-height:48px;text-transform:capitalize;color:#06042D;font-family:var(--general);}
-.migrate-section h2 span{font-weight:bold;}
+.migrate-section h2 span{font-weight:bold;} 
 .migrate-section ul li{font-weight:500;font-size:20px;line-height:30px;color:#363738;position:relative;padding-left:30px;margin-top:20px;border:1px solid #cdcdcd;border-radius:10px;padding:15px 30px 15px 50px;}
 .migrate-section ul li:before{position:absolute;content:'';width:18px;height:18px;left:20px;top:50%;background-image:url(../img/arrow.png);background-repeat:no-repeat;background-size:contain;transform:translateY(-50%);}
 .migrate-section .img-box{text-align:center;}
