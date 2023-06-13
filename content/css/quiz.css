@@ -39,22 +39,3 @@ button.popclose{border:0;position:absolute;top:10px;right:10px;background:transp
 /*.migrate-section h2{line-height:48px;}
 .abroad-section .container-fluid{padding:0 25px;}
 */
-/* ===============footer===================== */
-footer{background:#38526A;padding-top:57px;/* padding-bottom:57px;*/
-}
-.footContain{padding:50px;color:#FFFFFF;margin-bottom:57px;background:#38526A;box-shadow:-6px -6px 20px rgba(255,255,255,0.3),6px 6px 20px rgba(0,0,0,0.24);border-radius:30px;}
-.foot-logo img{margin-bottom:18px;}
-.footContain .row .col-md-3 p{color:#A5C2DF;}
-.footContain .row .col-md .pera-1{margin-bottom:18px;}
-.foot-title{font-size:22px;text-transform:uppercase;letter-spacing:1px;}
-.foot-social-link{display:flex;color:#A5C2DF;font-size:18px;}
-.foot-social-link:hover{color:#FFFFFF;}
-.foot-social-icon{text-align:center;width:35px;height:35px;display:flex;align-items:center;justify-content:center;background:#38526A;box-shadow:-3px -4px 10px rgba(255,255,255,0.2),4px 4px 10px rgba(0,0,0,0.23);border-radius:50px;margin-right:10px;margin-top:-3px;}
-.foot-social-icon-down{display:flex;}
-.foot-social-icon-down-item{text-align:center;padding-top:8px;width:44px;height:44px;margin-right:15px;background:#38526A;box-shadow:-3px -4px 10px rgba(255,255,255,0.2),4px 4px 10px rgba(0,0,0,0.23);border-radius:50px;}
-.foot-company ul li{margin-top:10px;}
-.foot-company ul li a{color:#A5C2DF;margin-top:10px;font-size:17px;}
-.foot-company ul li a:hover{color:#FFFFFF;margin-top:10px;}
-.copyright-section{background:#30475C;color:#A5C2DF;padding:20px;}
-.privacy-policy{text-align:right;cursor:pointer;}
-.footer-col li{margin:20px 0;}
