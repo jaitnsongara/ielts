@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./content/css/immigration-pr.css"/>
     <link rel="stylesheet" href="content/css/bootstrap.min.css">
     <link rel="stylesheet" href="content//css/owl.carousel.min.css">
+    <link rel="stylesheet" href="content/css/quiz.css">
     <link rel="stylesheet" href="content/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -51,6 +52,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="become-a-tutor.html">Become A Tutor</a>
                     </li>
+                    
                     </ul>
                 </div>
 
@@ -70,6 +72,7 @@
                         <a href="ebook.html">Ebooks</a>
                         <a href="#">Resources</a>
                         <a href="become-a-tutor.html">Become A Tutor</a>
+                        <a href="writing-2.html">Writing</a>
                     </div>
                     <button class="openbtn" onclick="openNav()">☰</button> 
 
@@ -79,7 +82,7 @@
                     <li><a href=""><img src="content/img/search-bar.png" alt=""></a></li>
                     <li><a href=""><img src="content/img/cart.png" alt=""></a></li>
                     <li><a href=""><img src="content/img/user.png" alt=""></a></li>
-                    <li><a class="btn-1" href="writing-2.html">WRITING</a></li>
+                    <li class="d-none d-lg-block" ><a class="btn-1" href="writing-2.html">WRITING</a></li>
                     </ul>
                 </nav>
         </div>
@@ -250,6 +253,42 @@
     </div>
 </div>
 
+
+<div class="modal modalbook fade" id="bookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-5">
+
+            <button type="button" class="closepop" data-bs-dismiss="modal">&times;</button>
+
+            <h3 class="text-dark w-100 text-center">Book a session now.</h3>
+
+            <div class="row custom-fields" >
+                <div class="col-md-6 mt-4" >
+                    <label>Name</label>
+                    <input type="text" placeholder="Name.." class="form-control" />
+                </div>
+                <div class="col-md-6 mt-4" >
+                    <label>Email</label>
+                    <input type="email" placeholder="Email Address" class="form-control" />
+                </div>
+                <div class="col-md-6 mt-4" >
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="+91 ..." class="form-control" />
+                </div>
+                <div class="col-md-6 mt-4 " >
+                    <label>Visiting Date</label>
+                    <input type="date" placeholder="12-10-2023" class="form-control" />
+                </div>
+
+                <div class="col-md-12" >
+                    <button type="submit" class="border-0 button m-auto d-table mt-4" ><span>Book Now</span></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
 <div class="migrate-section p-70">
     <div class="container">
         <div class="row">
@@ -261,7 +300,8 @@
                         <li>Canada PR</li>
                     </ul> -->
                     <div class="btn-box">
-                        <a class="button" href="#"><span>Answer & apply Pr</span></a>
+                        <a class="button"  data-bs-toggle="modal"
+                        data-bs-target="#bookModal" href="#"><span>Answer & apply Pr</span></a>
                     </div>
                 </div>
             </div>
@@ -329,9 +369,42 @@
 
 <div class="expertise-section p-70">
     <div class="container">
+
+        <div class="feeCalculator mb-5" >
+            <div class="text-center fee-head w-50 m-auto d-table">
+                <h2 class="heading" >Canada Immigration <span>Fee Calculator</span> </h2>
+                <p>This is completely customiasble with guaranteed band achievemnet. Find the fees for you by selecting the fields below.</p>
+            </div>
+
+            <div class="calculate-sec  my-4" >
+                <div class="row fee-row pb-4" >
+                    <div class="col-md-6 d-flex justify-content-center" >
+                            <div>
+                                <lable>Current Band</lable>
+                                <div class="quantity">
+                                    <a href="#" class="quantity__minus"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input" value="1">
+                                    <a href="#" class="quantity__plus"><span>+</span></a>
+                                  </div>
+                            </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center" >
+                            <div>
+                                <lable>Target Band</lable>
+                                <div class="quantity">
+                                    <a href="#" class="quantity__minus1"><span>-</span></a>
+                                    <input name="quantity" type="text" class="quantity__input1" value="1">
+                                    <a href="#" class="quantity__plus1"><span>+</span></a>
+                                  </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <button  class="button text-uppercase fee-calbtn pink-btn border-0 m-auto d-table" ><span>Book Free Consultation Now</span></button>
+        </div>
         
-        <div class="row">
-            <h2 class="main-heading">Check our <span>Expertise:</span> Ask anything & our <span>expert</span> consultant will <span>Answer</span></h2>
+        <div class="row m-auto">
+            <h2 class="main-heading text-center">Check our <span>Expertise:</span> Ask anything & our <span>expert</span> consultant will <span>Answer</span></h2>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
@@ -481,6 +554,49 @@
 <script src="content/js/script.js"></script>
 
 <script>
+
+$(document).ready(function() {
+  const minus = $('.quantity__minus');
+  const plus = $('.quantity__plus');
+  const input = $('.quantity__input');
+  minus.click(function(e) {
+    e.preventDefault();
+    var value = input.val();
+    if (value > 1) {
+      value--;
+    }
+    input.val(value);
+  });
+  
+  plus.click(function(e) {
+    e.preventDefault();
+    var value = input.val();
+    value++;
+    input.val(value);
+  })
+});
+
+$(document).ready(function() {
+  const minus = $('.quantity__minus1');
+  const plus = $('.quantity__plus1');
+  const input = $('.quantity__input1');
+  minus.click(function(e) {
+    e.preventDefault();
+    var value = input.val();
+    if (value > 1) {
+      value--;
+    }
+    input.val(value);
+  });
+  
+  plus.click(function(e) {
+    e.preventDefault();
+    var value = input.val();
+    value++;
+    input.val(value);
+  })
+});
+
 
     function openNav() {
       document.getElementById("mySidepanel").style.width = "90%";

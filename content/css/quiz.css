@@ -17,3 +17,44 @@ button.popclose{border:0;position:absolute;top:10px;right:10px;background:transp
 .custom-fields label{margin-bottom:6px;color:#7f7f7f;}
 .custom-fields input{padding:15px;border-radius:10px;border:1px solid #f0f0f0;background:#f0f0f0;}
 .closepop{position:absolute;top:10px;right:10px;background:transparent;border:0;font-size:50px;line-height:32px;}
+@media(min-width:1299px){header a.nav-link{font-size:17px !important;}
+}
+.profile-section .content-box{background:#f6b746 !important;box-shadow:none !important;}
+.accordion-body{padding:0;padding-top:10px;}
+.expertise-section .accordion-item .accordion-button{box-shadow:none !important;}
+.quantity{display:flex;align-items:center;justify-content:center;border:1px solid #d7dbe2;border-radius:70px;padding:5px;}
+.quantity__minus1,.quantity__plus1,.quantity__minus,.quantity__plus{margin:0;text-decoration:none;text-align:center;line-height:23px;background:linear-gradient(93.12deg,#F9508B 0%,#D91359 100%);border-radius:50px !important;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:7px 21px;gap:5px;width:54px;height:29px;font-size:23px;}
+.quantity__minus:hover,.quantity__plus:hover,.quantity__minus1:hover,.quantity__plus1:hover{background:#575b71;color:#fff;}
+.quantity__minus,.quantity__minus1{border-radius:3px 0 0 3px;}
+.quantity__plus,.quantity__plus1{border-radius:0 3px 3px 0;}
+.quantity__input,.quantity__input1{width:42px;height:29px;margin:0;padding:0;text-align:center;border-top:2px solid #dee0ee;color:#181818;border:0;background:transparent;font-weight:500;font-size:18px;}
+.quantity__minus1:link,.quantity__plus1:link,.quantity__minus:link,.quantity__plus:link{color:#8184a1;}
+.quantity__minus1:visited,.quantity__plus1:visited,.quantity__minus:visited,.quantity__plus:visited{color:#fff;}
+.calculate-sec lable{color:#000;font-size:17px;font-weight:600;text-align:center;display:block;padding:10px;}
+.calculate-sec{background:linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 100%);box-shadow:8px 8px 20px rgba(29,29,29,0.2);border-radius:10px;padding:50px;max-width:900px;margin:auto;}
+.expertise-section .row.fee-row{width:100%;max-width:80%;margin:auto;}
+.fee-head p{font-size:17px;font-weight:500;}
+.fee-calbtn{margin-top:-50px !important;}
+/* changes css */
+/*.migrate-section h2{line-height:48px;}
+.abroad-section .container-fluid{padding:0 25px;}
+*/
+/* ===============footer===================== */
+footer{background:#38526A;padding-top:57px;/* padding-bottom:57px;*/
+}
+.footContain{padding:50px;color:#FFFFFF;margin-bottom:57px;background:#38526A;box-shadow:-6px -6px 20px rgba(255,255,255,0.3),6px 6px 20px rgba(0,0,0,0.24);border-radius:30px;}
+.foot-logo img{margin-bottom:18px;}
+.footContain .row .col-md-3 p{color:#A5C2DF;}
+.footContain .row .col-md .pera-1{margin-bottom:18px;}
+.foot-title{font-size:22px;text-transform:uppercase;letter-spacing:1px;}
+.foot-social-link{display:flex;color:#A5C2DF;font-size:18px;}
+.foot-social-link:hover{color:#FFFFFF;}
+.foot-social-icon{text-align:center;width:35px;height:35px;display:flex;align-items:center;justify-content:center;background:#38526A;box-shadow:-3px -4px 10px rgba(255,255,255,0.2),4px 4px 10px rgba(0,0,0,0.23);border-radius:50px;margin-right:10px;margin-top:-3px;}
+.foot-social-icon-down{display:flex;}
+.foot-social-icon-down-item{text-align:center;padding-top:8px;width:44px;height:44px;margin-right:15px;background:#38526A;box-shadow:-3px -4px 10px rgba(255,255,255,0.2),4px 4px 10px rgba(0,0,0,0.23);border-radius:50px;}
+.foot-company ul li{margin-top:10px;}
+.foot-company ul li a{color:#A5C2DF;margin-top:10px;font-size:17px;}
+.foot-company ul li a:hover{color:#FFFFFF;margin-top:10px;}
+.copyright-section{background:#30475C;color:#A5C2DF;padding:20px;}
+.privacy-policy{text-align:right;cursor:pointer;}
+.footer-col li{margin:20px 0;}
