@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
@@ -108,7 +112,7 @@
             </div>
             <div class="col-md-6">
                 <div class="immi-map">
-                    <img class="img-fluid" src="content/img/ebook-img.png" alt="map">
+                    <img class="img-fluid" src="content/img/ebook-blue.png" alt="map">
                 </div>
             </div>
         </div>
@@ -148,8 +152,9 @@
         </div>
     </div>
 </div>
+
    
-<!-- <div class="ebook-sliders">
+<div class="ebook-sliders">
     <div class="container">
         <div class="row">
             <div class="section-padding">
@@ -182,9 +187,51 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 
 
+  
+  <div class="container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-active">
+          <img  src="content/img/ebook-img.png" alt="">
+        </div>
+        <div class="swiper-slide swiper-slide-active">
+          <img  src="content/img/ebook-img.png" alt="">
+        </div>
+        <div class="swiper-slide swiper-slide-active">
+          <img  src="content/img/ebook-img.png" alt="">
+        </div>
+        <div class="swiper-slide swiper-slide-active">
+          <img  src="content/img/ebook-img.png" alt="">
+        </div>
+        <div class="swiper-slide swiper-slide-active">
+          <img  src="content/img/ebook-img.png" alt="">
+        </div>
+        <div class="swiper-slide swiper-slide-active">
+          <img  src="content/img/ebook-img.png" alt="">
+        </div>
+        <div class="swiper-slide swiper-slide-active">
+          <img  src="content/img/ebook-img.png" alt="">
+        </div>
+        <div class="swiper-slide swiper-slide-active">
+          <img  src="content/img/ebook-img.png" alt="">
+        </div>
+        <div class="swiper-slide swiper-slide-active">
+          <img  src="content/img/ebook-img.png" alt="">
+        </div>
+        
+        
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+  
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
 
 <footer>
     <div class="footContain container">
@@ -253,12 +300,39 @@
     </div>
 </footer>
 
+
+
 <script src="content/js/bootstrap.min.js"></script>
 <script src="content/js/jquary.js"></script>
 <script src="content/js/owl.carousel.min.js"></script>
 <script src="content/js/slick.js" type="text/javascript" charset="utf-8"></script>
 <script src="content/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper", {
+  effect: "coverflow",
+  grabCursor: true,
+//   centeredSlides: true,
+  slidesPerView: "auto",
+  autoplay: {
+    delay: 8000
+  },
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth:150,
+    modifier: 2,
+    slideShadows: true
+  },
+  spaceBetween:10,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
 
+</script>
 <script>
 
 function openNav() {
