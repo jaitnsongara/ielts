@@ -139,6 +139,9 @@ header .mobile-menu{order:3;}
 .button:hover:before{-webkit-animation:criss-cross-left 0.8s both;animation:criss-cross-left 0.8s both;-webkit-animation-direction:alternate;animation-direction:alternate;}
 .button:hover:after{-webkit-animation:criss-cross-right 0.8s both;animation:criss-cross-right 0.8s both;-webkit-animation-direction:alternate;animation-direction:alternate;}
 .button span{position:relative;z-index:1;}
+.box-btn{
+    text-transform: uppercase;
+}
 .hero-section .content .demo-btn:hover{background:linear-gradient(268deg,#F9508B 0%,#D91359 100%);}
 .hero-section .content .mtl-btn{padding:16px 30px;border:1px solid var(--btn-border);border-radius:50px;color:#FF2C76;box-shadow:var(--btn-shadow);}
 .hero-section .content .mtl-btn:hover{box-shadow:var(--btn-shadow-hover);}
@@ -461,13 +464,29 @@ header .mobile-menu{order:3;}
 .hero-immigration .content{padding-right:41px;position:relative;z-index:1;}
 .hero-immigration .content h1{font-weight:400;line-height:62px;color:#06042D;font-size:36px;}
 .hero-immigration .content p{font-weight:700;font-size:var(--fs-2);line-height:29px;color:#413F63;}
-.immigration-cta{margin-top:46px;margin-bottom:100px;}
+.immigration-cta{margin-top:46px;}
 .text-bold{font-weight:700;}
+.immi-img{
+    max-width: 24px;
+    height: auto;
+    margin-right: 10px;
+    width: 100%;
+}
 .hero-immigration .immi-map{position:relative;right:151px;top:53px;}
 .hero-immigration .immi-map img{width:704px;}
 .immi-element-1{position:absolute;width:78px;top:182px;left:47.5%;}
 .immi-element-2{position:absolute;width:36px;top:31px;left:29%;}
-.immi-why-choose{margin:0 0 69px 0;}
+.immi-why-choose .libox{
+    width: 100%;
+    background: linear-gradient(96.27deg, rgba(213, 222, 254, 0.2) 0%, rgba(213, 222, 254, 0.8) 100%);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+    font-family:'DM Sans',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    border: 1px solid #dce3fe;
+}
 .immi-why-choose h2{font-weight:400;font-size:36px;line-height:45px;text-transform:capitalize;}
 .immi-why-choose .content-box{border:1px solid #d5d5d5;padding:10px;border-radius:10px;margin-top:25px;}
 .immi-why-choose .content-box p{font-weight:600;font-size:20px;line-height:24px;color:#000;text-align:center;padding-top:10px;}
@@ -480,6 +499,10 @@ header .mobile-menu{order:3;}
 .need-box{display:flex;margin-top:40px;}
 /* .immi-why-choose h2{font-weight:400;font-size:36px;line-height:65px;text-transform:capitalize;padding-bottom:15px;}
 */
+.need-img-main {
+    max-width: 350px;
+    margin-left: 50px;
+}
 .need-icon img{width:40px;height:auto;}
 .need-box .need-icon{background:linear-gradient(96.27deg,rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.5) 100%);border-radius:14px;padding:14px;margin-right:22px;display:flex;align-items:center;justify-content:center;height:65px;width:65px;}
 .need-box-1 h4{font-weight:500;font-size:24px;line-height:32px;text-transform:capitalize;color:#535353;text-shadow:2px 2px 6px rgba(0,0,0,0.3)}
@@ -492,17 +515,17 @@ header .mobile-menu{order:3;}
 .immigration-need .img-box{text-align:center;}
 .discover-section{background-image:url(../img/discover-section.png);position:relative;}
 .discover-section h2{font-weight:400;font-size:36px;line-height:45px;text-transform:capitalize;padding-bottom:20px;}
-.discover-section .main-img{position:absolute;left:-10px;width:400px;bottom:0;}
+.discover-section .main-img{position:absolute;left:-10px;width: 100%;bottom:0;max-width: 330px;}
 .discover-box{background:linear-gradient(180deg,#E4ECF9 0%,#C7DBFC 100%);box-shadow:8px 8px 20px rgba(29,29,29,0.2);border-radius:10px;padding:40px 15px 45px;height:265px;}
 .discover-box img{position:unset;padding-bottom:20px;padding-top:15px;}
 .discover-box h4{font-style:normal;font-weight:700;font-size:24px;line-height:30px;text-transform:capitalize;}
-.discover-box p{font-weight:400;font-size:15px;line-height:22px;padding-bottom:24px;color:#413F63;}
+.discover-box p{font-weight:400;font-size:13px;line-height:22px;padding-bottom:24px;color:#413F63;}
 .discover-box a{padding:10px 20px;font-size:15px;line-height:22px;text-transform:capitalize;}
 .immigration-testimonial-section{background-color:#9848FE;}
 .immigration-testimonial-section .testi-box{background-image:url(../img/testi-bg-12.png);/* background-color:#000;*/
  background-size:cover;width:100%;height:100%;padding:43px;}
 .immigration-testimonial-section .testi-slider .owl-item li{width:335px !important;}
-.still-confused h2{font-weight:400;font-size:36px;line-height:49px;text-transform:capitalize;color:#06042D;margin-bottom:40px;}
+.still-confused h2{font-weight:400;font-size:28px;line-height:49px;text-transform:capitalize;color:#06042D;margin-bottom:40px;}
 .still-confused h2 span{font-weight:bold;}
 .immigration-need-left{text-align:right;}
 .immigration-box{background:#F3F3FE;border:7px solid #FFFFFF;box-shadow:-8px -8px 30px #FFFFFF,8px 8px 20px rgba(0,0,0,0.3),inset -6px -6px 21px #FFFFFF,inset 6px 6px 30px rgba(0,0,0,0.06);border-radius:10px;width:fit-content;padding:15px;margin:20px;}
@@ -889,7 +912,7 @@ header{height:60px;display:flex;align-items:center;}
 .hero-immigration .content{padding:30px 30px 40px;border:var(--btn-border);box-shadow:var(--btn-shadow);border-radius:10px;}
 .hero-immigration .content h1{line-height:33px;}
 .immi-why-choose{margin:30px 0;}
-.immi-why-choose h2{font-size:var(--fs-1);padding-bottom:inherit;line-height:33px;}
+.immi-why-choose h2{font-size:var(--fs-1);/* padding-bottom:inherit; */line-height:33px;}
 .immi-why-choose ul li{font-size:var(--fs-2);padding:8px 0;}
 .shape-dash{height:333px;position:absolute;top:925px;left:25px;z-index:-1;}
 .need-content{border-radius:10px;padding:20px;}
@@ -999,6 +1022,9 @@ header .openbtn{padding:0px 6px;}
 .in-hand-section .content-box ul li{font-size:18px;}
 .profile-section .content-box ul li{font-size:20px;}
 .preparation-section h2{font-size:25px;}
+.immi-why-choose .libox {
+    font-size: 15px;
+}
 }
 @media(max-width:767px){.abroad-section .container-fluid{max-width:540px;}
 .yellow-box .content-box{box-shadow:none;padding:0;}
@@ -1009,6 +1035,12 @@ header .openbtn{padding:0px 6px;}
 .profile-section .content-box{box-shadow:none;padding:0;}
 .pr-profile{padding-left:16px;margin-top:30px;}
 .profile-section h2{margin-bottom:10px;}
+.immi-why-choose .libox {
+    padding: 15px;
+    font-size: 13px;
+}
+
+
 }
 @media(max-width:575px){.container{padding-left:25px;padding-right:25px;}
 }
