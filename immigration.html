@@ -87,28 +87,37 @@
     </div>
     </header>
 
- <div class="hero-immigration">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7 col-md-7 immi-hero-content">
-                <div class="content">
-                    <h1>Apply for or Extend a <span class="text-bold">Study</span> Permit or Studen <span class="text-bold">Work Permit</span></h1>
-                    <p>IELTS Single skill test Complete IELTS<br>Level evaluation</p>
-                    <div class="immigration-cta">
-                        <a class="pink-btn" href="#">Personalised Study Plan</a>
+    <div class="hero-immigration py-5">
+        <div class="immigration-crcl">
+            
+        </div>
+        <div class="immigration-crcl-grn">
+    
+        </div>
+        <div class="immigration-crcl-bgrn">
+    
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-7 col-md-7 immi-hero-content">
+                    <div class="content">
+                        <h1>Apply for or Extend a <span class="text-bold">Study</span> Permit or Student <span class="text-bold">Work Permit</span></h1>
+                        <p>IELTS Single skill test<br> Complete IELTSLevel evaluation</p>
+                        <div class="immigration-cta">
+                            <a class="button" href="#">Personalised Study Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-5">
+                    <div class="immi-map">
+                        <img class="immi-map-img img-fluid" src="content/img/map.png" alt="map">
                     </div>
                 </div>
             </div>
-            <div class="col-sm-5 col-md-5">
-                <div class="immi-map">
-                    <img class="immi-map-img img-fluid" src="content/img/map.png" alt="map">
-                </div>
-            </div>
+            <!-- <img class="immi-element-1" src="content/img/ellipse.png" alt="Elements">
+            <img class="immi-element-2" src="content/img/circle.png" alt="Elements"> -->
         </div>
-        <!-- <img class="immi-element-1" src="content/img/ellipse.png" alt="Elements">
-        <img class="immi-element-2" src="content/img/circle.png" alt="Elements"> -->
-    </div>
- </div>
+     </div>
  
  <div class="immi-why-choose">
     <div class="container">
@@ -250,7 +259,8 @@
                             <h4>Study abroad</h4>
                             <img src="content/img/discover-line.png" alt="">
                             <p>Get shortlisted universities and programs as per your profle</p>
-                            <a class="pink-btn" href="">free evaluation</a>
+                            <a data-bs-toggle="modal"
+                        data-bs-target="#bookModal" class="pink-btn" href=""><span>free evaluation</span></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-3">
@@ -258,7 +268,8 @@
                             <h4>settle abroad</h4>
                             <img src="content/img/discover-line.png" alt="">
                             <p>Know the best pathway to get Canada or Australia PR</p>
-                            <a class="pink-btn" href="">study evaluator</a>
+                        <a data-bs-toggle="modal"
+                        data-bs-target="#bookModal" class="pink-btn" href=""><span>study evaluator</span></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 mb-3">
@@ -266,7 +277,8 @@
                             <h4>job seeker visa</h4>
                             <img src="content/img/discover-line.png" alt="">
                             <p>Get chance to work in Canada, Europe, UK, USA</p>
-                            <a class="pink-btn" href="">profile evaluation</a>
+                        <a data-bs-toggle="modal"
+                        data-bs-target="#bookModal" class="pink-btn" href=""><span>profile evaluation</span></a>
                         </div>
                     </div>
                 </div>
@@ -278,8 +290,11 @@
 
 <!-- Book Popup -->
 <div class="modal modalbook fade" id="bookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-5">
+
+            <button type="button" class="closepop" data-bs-dismiss="modal">&times;</button>
+
             <h3 class="text-dark w-100 text-center">Book a session now.</h3>
 
             <div class="row custom-fields" >
