@@ -69,8 +69,15 @@ header{height:90px;background:rgba(232,216,253,0.1);backdrop-filter:blur(7px);po
 header .row{height:90px;}
 header .social-icon{list-style:none;display:inline-flex;padding-left:0;margin-bottom:0;}
 header .navbar-collapse{justify-content:center;}
-header a.nav-link{font-family:'General Sans',sans-serif;font-style:normal;font-weight:500;font-size:16px;line-height:22px;/* identical to box height */
- text-transform:capitalize;color:#3B4753;}
+header a.nav-link{
+ font-family:'General Sans',sans-serif;
+ font-style:normal;
+ font-weight:500;
+ font-size: 15px;
+ line-height:22px;/* identical to box height */
+ text-transform:capitalize;
+ color:#3B4753;
+ }
 header a.nav-link.active{color:#FF2C76;}
 header .dropdown-item.active{color:#FF2C76;background-color:transparent;}
 header a.nav-link:hover{color:#FF2C76;}
@@ -280,7 +287,7 @@ footer{background:#1C1E2F;padding-top:57px;/* padding-bottom:57px;*/
 .study-visa-form form input{height:55px;background-color:transparent;border-radius:12px;}
 .study-visa-form form input::placeholder{color:#CFCFCF;}
 .study-visa-form form{text-align:left;}
-.study-visa-form form label{font-weight:500;font-size:14px;color:#535353;position:relative;bottom:-10px;left:30px;background:#e4eaf3;padding:0 8px;}
+.study-visa-form form label{font-weight:500;font-size:14px;color:#535353;position:relative;bottom:-10px;left:30px;background: #f3f3fe;padding:0 8px;}
 .study-visa-form form textarea{width:100%;background-color:transparent;border-radius:12px;border-radius:12px;background-origin:padding-box;border:var(--btn-border);padding:16px 16px;}
 .study-visa-form form .form-control:focus,.study-visa-form form textarea:focus{color:inherit;background-color:transparent;border-color:#d1d9e6;outline:0;box-shadow:var(--btn-shadow-hover);}
 .study-visa-form form .btn-box{text-align:end;padding-top:45px;}
@@ -471,9 +478,39 @@ footer{background:#1C1E2F;padding-top:57px;/* padding-bottom:57px;*/
 .modal-1 .close:focus{box-shadow:var(--btn-shadow-hover);}
 .modal-title span{font-weight:bold;}
 /* ----------------------------------------------------------- Immigration Page css---------------------------------------------------- */
-.hero-immigration{background-color:#E4ECF9;padding:128px 0;overflow:hidden;}
+.hero-immigration{background-color:#E4ECF9;overflow:hidden;}
+.hero-immigration .immigration-crcl{
+position: absolute;
+width: 75px;
+height: 75px;
+left: 628px;
+top: 109px;
+border-radius: 50%;
+background: #FFB7D0;
+opacity: 0.3;
+}
+
+.hero-immigration .immigration-crcl-grn {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 338px;
+    top: 332px;
+    border-radius: 50%;
+    border: 10px solid #C8FEC4;}
+
+    .hero-immigration .immigration-crcl-bgrn {
+        position: absolute;
+        width: 132.68px;
+        height: 132.68px;
+        left: 437.66px;
+        top: 455.5px;
+        border-radius: 50%;
+        opacity: 0.7;
+        border: 30px solid #BCFFCF;
+    }
 .hero-immigration .content{padding-right:41px;position:relative;z-index:1;}
-.hero-immigration .content h1{font-weight:400;font-size:var(--fs-1);line-height:62px;color:#06042D;}
+.hero-immigration .content h1{font-weight:400;line-height:62px;color:#06042D; font-size: 36px;}
 .hero-immigration .content p{font-weight:700;font-size:var(--fs-2);line-height:29px;color:#413F63;}
 .immigration-cta{margin-top:46px;margin-bottom:100px;}
 .text-bold{font-weight:700;}
@@ -677,7 +714,6 @@ header .social-icon li .btn-1{padding:16px 26px;}
 @media only screen and (min-width:768px){.expertise-section .boxes{width:75%;margin:auto;}
 .expertise-section .row{width:75%;}
 .migrate-section ul li{width:71%;}
-.profile-section .content-box ul li{font-size:15px;}
 }
 @media only screen and (min-width:992px){header .mobile-menu{display:none;}
 .feature-section .content-box{height:250px;}
@@ -696,6 +732,8 @@ footer{padding:57px 15px;}
         display: block;
         border-top: 1px solid #d2d2d2;
     }
+.profile-section .content-box ul li{font-size:15px;}
+
     header .navbar-toggler:focus{box-shadow:none;}
 header .navbar-toggler{filter:invert(49%) sepia(95%) saturate(5424%) hue-rotate(320deg) brightness(98%) contrast(105%);margin-left:auto;display:none;}
 header .navbar-toggler span{display:flex;align-items:end;}
