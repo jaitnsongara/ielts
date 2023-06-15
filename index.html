@@ -216,7 +216,7 @@
 
     <!-- Personlised questions form -->
     <div class="modal modalquiz fade" id="quizModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <h3 class="text-center w-100 text-white">Get personalised study plan</h3>
                 <div class="quiz-container d-flex justify-content-center">
@@ -317,38 +317,44 @@
                 </div>
                 <div class="col-lg-6 my-auto wow r-slide">
                     <div class="boxes pe-0 pt-4 pt-lg-0 d-block pe-lg-5">
-                        <div class="left-box">
-                            <div class="box">
-                                <div class="img-box">
-                                    <img class="pen" src="content/img/pen.png" alt="">
+                        <div class="left-box row">
+                            <div class="col-sm-6 mb-4" >
+                                <div class="box">
+                                    <div class="img-box">
+                                        <img class="pen" src="content/img/pen.png" alt="">
+                                    </div>
+                                    <p>Writing</p>
                                 </div>
-                                <p>Writing</p>
                             </div>
-                            <div class="box box-bottom">
-                                <div class="img-box">
-                                    <img class="book" src="content/img/book.png" alt="">
+                            <div class="col-sm-6 mb-4" >
+                                <div class="box ">
+                                    <div class="img-box">
+                                        <img class="book" src="content/img/book.png" alt="">
+                                    </div>
+                                    <p>reading</p>
                                 </div>
-                                <p>reading</p>
                             </div>
-                        </div>
-                        <div class="right-box">
-                            <div class="box">
-                                <div class="img-box">
-                                    <img class="user-2" src="content/img/user-2.png" alt="">
+                            <div class="col-sm-6 mb-4" >
+                                <div class="box">
+                                    <div class="img-box">
+                                        <img class="user-2" src="content/img/user-2.png" alt="">
+                                    </div>
+                                    <p>speaking</p>
                                 </div>
-                                <p>speaking</p>
                             </div>
-                            <div class="box box-bottom">
-                                <div class="img-box">
-                                    <img class="question" src="content/img/question.png" alt="">
+                            <div class="col-sm-6 mb-4" >
+                                <div class="box">
+                                    <div class="img-box">
+                                        <img class="question" src="content/img/question.png" alt="">
+                                    </div>
+                                    <p>listening</p>
                                 </div>
-                                <p>listening</p>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <div class="solution-section desktop-solution-section p-70">
@@ -362,7 +368,8 @@
                             <img class="img-fluid" src="content/img/flite.png" alt="">
                         </div>
                         <h4>permanent residency</h4>
-                        <div><a class="button text-uppercase w-100 d-block bg-white" href="#"><span>Check
+                        <div><a data-bs-toggle="modal"
+                            data-bs-target="#quizModal" class="button text-uppercase w-100 d-block bg-white" href="#"><span>Check
                                     eligibility</span></a></div>
                     </div>
                 </div>
@@ -373,7 +380,8 @@
                             <img class="blend img-fluid" src="content/img/travel.png" alt="">
                         </div>
                         <h4>permanent residency</h4>
-                        <div><a class="button text-uppercase w-100 d-block bg-white" href="#"><span>Check
+                        <div><a data-bs-toggle="modal"
+                            data-bs-target="#quizModal" class="button text-uppercase w-100 d-block bg-white" href="#"><span>Check
                                     eligibility</span></a></div>
 
                     </div>
@@ -385,7 +393,8 @@
                             <img class="img-fluid" src="content/img/mobile-flite.png" alt="">
                         </div>
                         <h4>permanent residency</h4>
-                        <div><a class="button text-uppercase w-100 d-block bg-white" href="#"><span>Check
+                        <div><a data-bs-toggle="modal"
+                            data-bs-target="#quizModal" class="button text-uppercase w-100 d-block bg-white" href="#"><span>Check
                                     eligibility</span></a></div>
 
                     </div>
