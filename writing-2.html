@@ -79,7 +79,7 @@
                             <a href="ebook.html">Ebooks</a>
                             <a href="#">Resources</a>
                             <a href="become-a-tutor.html">Become A Tutor</a>
-                            <a href="writing-2.html">Writing</a>
+                            <a href="topic.html">Writing</a>
                         </div>
                         <button class="openbtn" onclick="openNav()">☰</button>
 
@@ -89,12 +89,54 @@
                         <li><a href=""><img src="content/img/search-bar.png" alt=""></a></li>
                         <li><a href=""><img src="content/img/cart.png" alt=""></a></li>
                         <li><a href=""><img src="content/img/user.png" alt=""></a></li>
-                        <li class="d-none d-lg-block"><a class="btn-1" href="writing-2.html">WRITING</a></li>
+                        <li class="d-none d-lg-block"><a class="btn-1" href="topic.html">WRITING</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
+
+    <!-- Book Popup -->
+    <div class="modal modalbook fade" id="priceModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-5">
+                <button type="button" class="closepop" data-bs-dismiss="modal">&times;</button>
+
+                <h3 class="text-dark w-100 text-center mb-4">Choose Pricing Plan</h3>
+
+                <div class="planPrice" >
+                    <input checked type="radio" name="plan" id="plan1" value="plan1" />
+                    <label for="plan1" >
+                        <h2>Monthly</h2>
+                        <h3>$50.00</h3>
+                        <h4 class="text-decoration-line-through" >$99.00</h4>
+                    </label>
+                </div>
+                <div class="planPrice" >
+                    <input type="radio" name="plan" id="plan2" value="plan2" />
+                    <label for="plan2" >
+                        <h2>6 Months</h2>
+                        <h3>$200.00</h3>
+                        <h4 class="text-decoration-line-through" >$299.00</h4>
+                    </label>
+                </div>
+                <div class="planPrice" >
+                    <input type="radio" name="plan" id="plan3" value="plan3" />
+                    <label for="plan3" >
+                        <h2>Yearly</h2>
+                        <h3>$500.00</h3>
+                        <h4 class="text-decoration-line-through" >$1199.00</h4>
+                    </label>
+                </div>
+
+                <a class="d-block button mt-4" ><span>Pay Now</span></a>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="writing2-main-section py-5 ">
         <div class="container">
@@ -104,7 +146,8 @@
                         <h2>In order to start checking your essays you have to become the Premium User</h2>
                         <div class="premiun-actions d-flex align-items-center justify-content-center" >
                             <a href="#" class="button  mx-2 bg-white " ><span>Try Demo</span></a>
-                            <a href="#" class="button mx-2 " ><span>Go Premium</span></a>
+                            <a href="#" data-bs-toggle="modal"
+                            data-bs-target="#priceModal" class="button mx-2 " ><span>Go Premium</span></a>
                         </div>
                     </div>
                     <div class="text-box">
