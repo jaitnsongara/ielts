@@ -886,7 +886,7 @@ footer{background:#38526a;padding-top:57px}
 .discover-box p,.need-box p{font-weight:400;color:#413f63}
 .discover-box h4,.need-box p{font-size:18px;line-height:25px;text-transform:capitalize}
 .immigration-need{background-color:#4268f2;padding-top:285px;padding-bottom:40px}
-.discover-section h2,.immigration-need h2{font-weight:400;font-size:36px;line-height:45px}
+.discover-section h2,.immigration-need h2{font-weight:400;font-size:36px; }
 .immigration-need h2{color:#fff}
 .immigration-need ul li{font-weight:500;font-size:18px;line-height:23px;text-transform:uppercase;color:#eff3ff;margin-top:25px;position:relative;padding-left:35px}
 .immigration-need ul li:before{position:absolute;content:"";background-image:url(../img/white-arrow.png);width:20px;height:18px;left:0;top:0}
@@ -1080,7 +1080,10 @@ header .navbar-brand .small-logo{display:block!important}
 .btn-section .option-box{font-size:12px}
 .know-your .content-box .btn-box{padding-top:0}
 .i-pr-hero{padding:40px 0}
-.button{padding:12px 20px}
+.button {
+   padding: 12px 35px;
+   font-size: 14px;
+}
 .in-hand-section .content-box ul li{font-size:16px!important;padding:15px;min-height:79px}
 .expertise-section .row{width:100%}
 header .sidepanel a:hover{color:#3b4753;box-shadow:none;background:#d8e4f6}
@@ -1088,6 +1091,14 @@ header .sidepanel a:hover{color:#3b4753;box-shadow:none;background:#d8e4f6}
 .dropdown-menu a{border:0!important;padding:7px 26px!important;font-size:20px!important}
 .resource-box{padding-top:200px!important}
 .box.box-bottom{margin:25px 0}
+
+.hero-immigration{padding:30px 0 10px}
+.immi-hero-content{order:2;text-align:center}
+.hero-immigration .immi-map{position:inherit}
+.hero-immigration .immi-map img{padding:15px}
+.immi-why-choose{margin:30px 0}
+.immi-why-choose h2{font-size:var(--fs-1);line-height:33px}
+.immi-why-choose ul li{font-size:var(--fs-2);padding:8px 0}
 }
 @media only screen and (max-width:767px){footer .footer-col{margin-bottom:1px}
 .privacy-policy{text-align:inherit}
@@ -1184,6 +1195,7 @@ header{/* background:red!important;*/
 .become-a-tutor-form{padding:0!important;background-color:#39526a!important;border:0}
 .become-a-tutor-form a.button{width:100%;display:block}
 .become-a-tutor-form .container{padding:30px 25px;box-shadow:none;border:0}
+
 }
 @media (max-width:575px){.hero-section .content h1{font-size:30px}
 .hero-section .content .mtl-btn{padding:16px;font-size:13px}
@@ -1223,13 +1235,7 @@ header{display:flex;align-items:center;backdrop-filter:blur(12px);}
 .become-a-tutor-form form .form-group{margin-bottom:15px}
 .writing-main-section .img-box .box.box-2{margin:180px auto auto;width:100%}
 .writing-form form .group-1 img,.writing-form form .group-2 img{left:auto;right:0}
-.hero-immigration{padding:30px 0 10px}
-.immi-hero-content{order:2;text-align:center}
-.hero-immigration .immi-map{position:inherit}
-.hero-immigration .immi-map img{padding:15px}
-.immi-why-choose{margin:30px 0}
-.immi-why-choose h2{font-size:var(--fs-1);line-height:33px}
-.immi-why-choose ul li{font-size:var(--fs-2);padding:8px 0}
+
 .shape-dash{height:333px;position:absolute;top:925px;left:25px;z-index:-1}
 .need-content{border-radius:10px;padding:20px!important}
 .need-img-main{display:none}
@@ -1377,6 +1383,46 @@ button.fee-calbtn{margin-top:-55px !important;}
    font-size: 18px;
 }
 
+
+/*Contact page left side*/
+.contact-page-left-side, .contact-page-right, .google-map-area .col-12 {
+   padding: 0;
+}
+
+.contact-page-left-side-wrap {
+   padding: 50px;
+}
+.contact-info-item {
+   width: 300px;
+   margin-bottom: 25px;
+}
+
+/*Contact page right side*/
+.contact-form-area {
+   padding: 50px;
+   /* border-left: 1px solid #EBE9E2; */
+}
+.contact-form-title {
+   margin-bottom: 35px;
+}
+.contact-form-area textarea.form-control {
+   min-height: 134px;
+}
+
+/*Google Map area*/
+.google-map-area iframe {
+   width: 100%;
+   height: 529px;
+}
+.contact-form-area input, .contact-form-area select,
+ .contact-form-area textarea {
+   padding: 15px;
+   border-radius: 10px;
+   border: 1px solid #f0f0f0;
+   background: #ffffff;
+   margin-bottom: 20px;
+}
+
 @media only screen and (max-width:380px){header .social-icon li{object-fit:contain!important}
 
 header .social-icon li .btn-1{padding:8px 18px;font-size:13px}
@@ -1403,6 +1449,10 @@ a.navbar-brand img{max-width:150px!important;display:block}
 .immigration-cta{margin:0 0 30px}
 .btn-section .btn-boxes ul a{margin-left:0!important;margin-top:4px}
 .cart-main-section .head-box h1{font-size:40px;line-height:inherit}
+.contact-page-left-side-wrap, .contact-form-area {
+   padding: 0 15px;
+   padding-bottom: 40px;
+}
 }
 @media (max-width:767px){.abroad-section .container-fluid{max-width:540px}
 .yellow-box .content-box{box-shadow:none;padding:0}
@@ -1446,6 +1496,9 @@ button.fee-calbtn{margin-top:5px !important;}
    box-shadow: 0 0 10px 3px #0001;
    line-height: 38px !important;
 }
+.contactbtn { 
+   width: 100%;
+}
 }
 @media (max-width:575px){.container{padding-left:25px;padding-right:25px}
 header .sidepanel a{padding:13px 30px;font-size:19px}
@@ -1460,6 +1513,9 @@ header .sidepanel{max-width:70%!important;margin-left:-10px}
 .premiun-actions a{width:100%;display:block;margin:15px 0 0!important}
 .topic-field + .button {
    width: 100%;
+}
+.hero-immigration .content {
+   padding-right: 0;
 }
 .modal-content {
    padding: 25px !important;
