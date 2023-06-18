@@ -513,11 +513,11 @@ h2{font-size:36px}
 .hero-elements.shakeX{animation-duration:2s;animation-name:shakeX;animation-delay:2s}
 .hero-elements.flash{animation-duration:3s;animation-name:heartBeat;animation-delay:1s}
 
-/* 
+
 .l-slide,.r-slide{visibility:hidden;animation-duration:2s;animation-name:fadeInLeft}
 .r-slide{animation-name:fadeInRight}
 .in-fade,.up-slide{visibility:hidden;animation-duration:1s;animation-name:fadeInUp}
-.in-fade{animation-duration:4s;animation-name:fadeIn} */
+.in-fade{animation-duration:4s;animation-name:fadeIn}
 
 
 .blog-section .box-2.zoomIn,.solution-section .box-2.up-slide,.writing2-main-section .band-score,.writing2-main-section .p-words{animation-delay:.4s}
