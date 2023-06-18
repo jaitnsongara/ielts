@@ -340,8 +340,8 @@
             coverflowEffect: {
                 rotate: 0,
                 stretch: 100,
-                depth: 250,
-                modifier:1.7,
+                depth: 100,
+                modifier:1.5,
                 slideShadows: true
             },
             spaceBetween: 5,
@@ -371,54 +371,54 @@
 
 
         // tab start------------
-        $('#tabs-nav li:first-child').addClass('active');
-        $('.tab-content').hide();
-        $('.tab-content:first').show();
+        // $('#tabs-nav li:first-child').addClass('active');
+        // $('.tab-content').hide();
+        // $('.tab-content:first').show();
 
-        $('#tabs-nav li').click(function () {
-            $('#tabs-nav li').removeClass('active');
-            $(this).addClass('active');
-            $('.tab-content').hide();
+        // $('#tabs-nav li').click(function () {
+        //     $('#tabs-nav li').removeClass('active');
+        //     $(this).addClass('active');
+        //     $('.tab-content').hide();
 
-            var activeTab = $(this).find('a').attr('href');
-            $(activeTab).fadeIn();
-            return false;
-        });
-        // tab end------------
+        //     var activeTab = $(this).find('a').attr('href');
+        //     $(activeTab).fadeIn();
+        //     return false;
+        // });
+        // // tab end------------
 
-        var owl = $('.screenshot_slider').owlCarousel({
-            loop: true,
-            responsiveClass: true,
-            nav: true,
-            margin: 0,
-            autoplayTimeout: 4000,
-            smartSpeed: 400,
-            center: true,
-            navText: ['&#8592;', '&#8594;'],
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                600: {
-                    items: 3
-                },
-                992: {
-                    items: 5,
-                },
-                1200: {
-                    items: 5
-                }
-            }
-        });
+        // var owl = $('.screenshot_slider').owlCarousel({
+        //     loop: true,
+        //     responsiveClass: true,
+        //     nav: true,
+        //     margin: 0,
+        //     autoplayTimeout: 4000,
+        //     smartSpeed: 400,
+        //     center: true,
+        //     navText: ['&#8592;', '&#8594;'],
+        //     responsive: {
+        //         0: {
+        //             items: 1,
+        //         },
+        //         600: {
+        //             items: 3
+        //         },
+        //         992: {
+        //             items: 5,
+        //         },
+        //         1200: {
+        //             items: 5
+        //         }
+        //     }
+        // });
 
-        jQuery(document.documentElement).keydown(function (event) {
-            if (event.keyCode == 37) {
-                owl.trigger('prev.owl.carousel', [400]);
-            } else if (event.keyCode == 39) {
-                owl.trigger('next.owl.carousel', [400]);
-            }
+        // jQuery(document.documentElement).keydown(function (event) {
+        //     if (event.keyCode == 37) {
+        //         owl.trigger('prev.owl.carousel', [400]);
+        //     } else if (event.keyCode == 39) {
+        //         owl.trigger('next.owl.carousel', [400]);
+        //     }
 
-        });
+        // });
     </script>
 </body>
 
