@@ -325,59 +325,61 @@
         </div>
     </div>
 
-    <div class="testimonial-section">
-        <div class="row">
-            <div class="testi-title">
-                <h2>What are our <span>Students saying</span></h2>
-            </div>
-            <div class="col-md-12 testi-slider">
-                <ul class="owl-carousel">
-                    <li>
-                        <div class="testi-box">
-                            <p>“Attend live online classes to learn, revise, analyse mock tests and prepare for IELTS
-                                with experts. Attend live online classes analyse mock tests to learn, revise, analyse
-                                mock"</p>
-                        </div>
-                        <div class="author">
-                            <div class="img-box">
-                                <img src="content/img/author.png" alt="">
+    <div class="testimonial-section px-3 px-sm-0">
+        <div class="container" >
+            <div class="row wow r-slide">
+                <div class="testi-title">
+                    <h2>What are our <span>Students saying</span></h2>
+                </div>
+                <div class="col-md-12 testi-slider">
+                    <ul class="owl-carousel">
+                        <li>
+                            <div class="testi-box">
+                                <p>“Attend live online classes to learn, revise, analyse mock tests and prepare for IELTS
+                                    with experts. Attend live online classes analyse mock tests to learn, revise, analyse
+                                    mock"</p>
                             </div>
-                            <div class="text-box">
-                                <p>Test_User </p>
+                            <div class="author">
+                                <div class="img-box">
+                                    <img src="content/img/author.png" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <p>Test_User </p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="testi-box">
-                            <p>“Attend live online classes to learn, revise, analyse mock tests and prepare for IELTS
-                                with experts. Attend live online classes analyse mock tests to learn, revise, analyse
-                                mock"</p>
-                        </div>
-                        <div class="author">
-                            <div class="img-box">
-                                <img src="content/img/author.png" alt="">
+                        </li>
+                        <li>
+                            <div class="testi-box">
+                                <p>“Attend live online classes to learn, revise, analyse mock tests and prepare for IELTS
+                                    with experts. Attend live online classes analyse mock tests to learn, revise, analyse
+                                    mock"</p>
                             </div>
-                            <div class="text-box">
-                                <p>Test_User </p>
+                            <div class="author">
+                                <div class="img-box">
+                                    <img src="content/img/author.png" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <p>Test_User </p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="testi-box">
-                            <p>“Attend live online classes to learn, revise, analyse mock tests and prepare for IELTS
-                                with experts. Attend live online classes analyse mock tests to learn, revise, analyse
-                                mock"</p>
-                        </div>
-                        <div class="author">
-                            <div class="img-box">
-                                <img src="content/img/author.png" alt="">
+                        </li>
+                        <li>
+                            <div class="testi-box">
+                                <p>“Attend live online classes to learn, revise, analyse mock tests and prepare for IELTS
+                                    with experts. Attend live online classes analyse mock tests to learn, revise, analyse
+                                    mock"</p>
                             </div>
-                            <div class="text-box">
-                                <p>Test_User </p>
+                            <div class="author">
+                                <div class="img-box">
+                                    <img src="content/img/author.png" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <p>Test_User </p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -473,12 +475,11 @@
         $(document).ready(function () {
 
             $('.testimonial-section ul').owlCarousel({
-                items: 4,
                 margin: 20,
-                stagePadding: 60,
                 loop: true,
                 autoplay: true,
                 center: false,
+                responsiveClass: true,
                 responsive: {
                     0: {
                         items: 1,
