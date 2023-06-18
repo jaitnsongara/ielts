@@ -759,6 +759,7 @@ footer{background:#38526a;padding-top:57px}
 .become-a-tutor-form form .form-control:focus,.become-a-tutor-form form textarea:focus{color:inherit;background-color:transparent;border-color:#cfcfcf;outline:0}
 .become-a-tutor-form form .btn-box{text-align:end;padding-top:20px}
 .e-explore-section{background-color:#e4ecf9}
+.become-a-tutor-form form .form-group input[type='file']{padding:14px;color:#fff;}
 .e-explore-section .content-box{width:41%;margin:auto;padding-top:60px}
 .e-explore-section h1{position:relative}
 .e-explore-section .img-box{position:absolute;top:20px;right:0;z-index:-1}
@@ -780,6 +781,10 @@ footer{background:#38526a;padding-top:57px}
 .g-traninig .owl-nav .owl-prev span{left:0}
 .g-traninig .owl-carousel{position:relative}
 .a-traninig{padding-top:0}
+.become-a-tutor-form form .form-group input[type='file']::file-selector-button {
+   background-color: transparent;
+   color:#fff;
+}
 .g-traninig .owl-nav .owl-next span:before,.g-traninig .owl-nav .owl-prev span:before{content:"";position:absolute;width:30px;height:30px;background:#ff2c7687;top:0;z-index:-26;border-radius:50px}
 .g-traninig .owl-nav .owl-prev span:before{left:0}
 .g-traninig .owl-nav .owl-next span:before{right:0}
