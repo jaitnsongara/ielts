@@ -23,14 +23,36 @@
 <body>
 
 
+    <div class="preloader">
+        <div>
+            <img class="small-logo" src="content/img/small-logo.png" alt="" >
+            <p>Loading</p>
+        </div>
+    </div>
 
+    <div style="display: none;" class="offer-Pop align-items-center p-4" >
+        
+        <div class="offer-pop-inner position-relative" >
+            <button onclick={closeoffer} type="button" class="closepop closeoffer"  >&times;</button>
+            <h2 class="heading sm" >Get Instant <span>Access</span>  To Free<span> IELTS Resources</span> </h2>
+        
+            <div class="p-4" >
+                <img alt="banner" class="img-fluid" src="./content/img/hero-img.svg" />
+            </div>
+
+            <button class="button mt-4 border-0 sm" >Sign Up Now</button>
+        
+        </div>
+    </div>
 
     <header>
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html"><img class="big-logo" src="content/img/logo.png"><img
-                            class="small-logo" src="content/img/small-logo.png" alt="" style="display: none;"></a>
+                    <a class="navbar-brand" href="index.html">
+                        <img class="big-logo" src="content/img/logo.png">
+                        <img class="small-logo" src="content/img/small-logo.png" alt="" style="display: none;">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-bs-expanded="false" aria-bs-label="Toggle navigation">
@@ -104,6 +126,93 @@
         </div>
     </header>
 
+    <div class="offerbar" >
+        <div class="container" >
+            <p>Now offering IELTS Self-study Course Loaded With 8 Band Strategies @JUST 299/-<a href="#" class="">View pack</a></p>
+        </div>
+    </div>
+
+    <!-- Book Popup -->
+    <div class="modal modalbook fade" id="freeDemo" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-5">
+
+                <button type="button" class="closepop" data-bs-dismiss="modal">&times;</button>
+
+                <div class="study-visa-form demo-form p-70">
+                    <div class="container">
+                        <h2>Book A Free <span> Demo</span></h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy.</p>
+                        <div class="row">
+                            <form>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="">First Name</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Last Name</label>
+                                        <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Phone</label>
+                                        <input type="phone" class="form-control" id="inputPassword4" placeholder="Phone">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="">Select Date</label>
+                                        <input type="date" class="form-control" id="inputEmail4"
+                                            placeholder="Select Your Study Plan">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Residence</label>
+                                        <input type="text" class="form-control" id="inputPassword4" placeholder="Please Select">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Message</label>
+                                    <textarea name="" id="" rows="5" placeholder="Describe your query......... "></textarea>
+                                </div>
+                                <div class="check-box mt-4 d-flex align-items-center">
+                                    <input id="checker" class="d-none" type="checkbox">
+                                    <label class="check" for="checker">
+                                        <svg width="28" height="23" viewBox="0 0 28 23" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.3555 19.847H2.92392V4.96652H15.9194L18.8433 2.14697H0V22.6665H21.2792V21.2568V15.0725L18.3555 17.892V19.847Z"
+                                                fill="#7F858A" />
+                                            <path
+                                                d="M8.6908 6.61221L5.68359 9.51255L10.5792 14.2329L13.5864 17.1331L16.5936 14.2329L28.0008 3.23378L24.9931 0.333496L13.5869 11.3325L8.6908 6.61221Z"
+                                                fill="#7F858A" />
+                                        </svg>
+                                        <span>Lorem Ipsum is simply dummy text of the p has been the industry's standard
+                                            dummy.</span>
+                                    </label>
+                                </div>
+                                <div class="btn-box mt-4">
+                                    <button class="button border-0 "   type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="hero-section" id="move-hero">
         <div class="container" id="move-elements-1">
             <div class="row" id="move-elements-2">
@@ -119,14 +228,14 @@
                             </span></div>
                         <p class="p2">Successful Immigrants 98% success stories with 7.5 band</p>
                         <div class="dbl-btn pt-4">
-                            <a class="button me-0 me-sm-3 " href=""><span>BOOK FREE DEMO</span></a>
+                            <a class="button me-0 me-sm-3 " href="" data-bs-toggle="modal" data-bs-target="#freeDemo"><span>BOOK FREE DEMO</span></a>
                             <a class="button  border-btn border-red" href=""><span>Access Free Material</span></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block my-auto box-2 r-slide wow">
                     <div class="img-box" id="move-img-box">
-                        <img class="img-fluid backInDown" id="move-img" src="content/img/hero-img.png" alt="IELTS">
+                        <img class="img-fluid backInDown" id="move-img" src="content/img/hero-img.svg" alt="IELTS">
                         <img id="h1" class="img-fluid hero-elements h1 heartBeat" src="content/img/h1.png" alt="IELTS">
                         <img id="h2" class="img-fluid hero-elements h2 shakeX" src="content/img/h2.png" alt="IELTS">
                         <img id="h3" class="img-fluid hero-elements h3 flash" src="content/img/h3.png" alt="IELTS">
@@ -772,6 +881,20 @@
 
     <script>
         $(document).ready(function () {
+
+            setTimeout(function () {
+                document.querySelector(".preloader").style.display = "none";
+            }, 2000);
+            
+            setTimeout(function () {
+                document.querySelector(".offer-Pop").style.display = "flex";
+            }, 8000);
+            
+
+            $('.closeoffer').click(function(){
+                $(".offer-Pop").addClass("d-none");
+            });
+          
 
             $('.feature-section .content-box').hover(
                 function () {
