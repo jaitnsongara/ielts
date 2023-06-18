@@ -54,6 +54,7 @@ body{font-family:"DM Sans",sans-serif;background:#f3f3fe}
 a{text-decoration:none}
 ul{padding-left:0;list-style:none}
 p,ul{margin-bottom:0}
+.immi-map{margin-bottom:-300px;}
 .custome_slide.owl-carousel .owl-item.active.center .main-reviewimage{border:2px solid #fff}
 #slide-testimonal .active.center .main-reviewimage img{opacity:1}
 .testi-slider .author small{font-weight:400;font-size:14px;line-height:16px;text-transform:capitalize;color:#b90000}
@@ -93,6 +94,7 @@ h2 span{font-weight:700}
 .live-class .text{margin-top:30px}
 .live-class .text h1{font-size:26px}
 .live-class .text .watch{font-size:16px;color:#989898}
+.live-img video{height:100%;width:100%;object-fit:cover;border-radius:10px;}
 .live-class .text p{font-size:16px;line-height:25px;margin-bottom:20px;color:#4a4a4a}
 .q-lists{background:#f3f3fe;padding:20px;border-radius:10px;width:100%}
 .q-lists ul{height:60vh;overflow:auto;padding-bottom:100px}
@@ -145,7 +147,8 @@ footer{padding:57px 0 0}
 .solution-section .container{padding:0 25px}
 .footContain{padding:0;box-shadow:none}
 }
-@media (max-width:992px){header .sidepanel a{padding:15px 30px;font-size:22px;display:block;border-top:1px solid #d2d2d2}
+@media (max-width:992px){.immi-map{margin-bottom:0px;}
+header .sidepanel a{padding:15px 30px;font-size:22px;display:block;border-top:1px solid #d2d2d2}
 .tutor-experience-section .btn-box a{font-size:15px}
 header .navbar-toggler:focus{box-shadow:none}
 header .navbar-toggler{filter:invert(49%) sepia(95%) saturate(5424%) hue-rotate(320deg) brightness(98%) contrast(105%);margin-left:auto;display:none}
@@ -186,7 +189,8 @@ header .navbar-brand .small-logo{display:block!important}
 .form-page ul#tabs-nav li{margin-right:10px}
 .courses-dashbooared .card-section{grid-template-columns:repeat(2,1fr)}
 .btn-section .btn-boxes ul a{font-size:11px;margin-right:8px}
-.btn-section .option-box{font-size:12px}
+.btn-section .option-box{/* font-size:12px;*/
+}
 .know-your .content-box .btn-box{padding-top:0}
 .i-pr-hero{padding:40px 0}
 .button{padding:16px 20px}
@@ -512,14 +516,11 @@ h2{font-size:36px}
 .hero-elements.shakeY{animation-duration:4s;animation-name:shakeY;animation-delay:1s}
 .hero-elements.shakeX{animation-duration:2s;animation-name:shakeX;animation-delay:2s}
 .hero-elements.flash{animation-duration:3s;animation-name:heartBeat;animation-delay:1s}
-
-
-.l-slide,.r-slide{visibility:hidden;animation-duration:2s;animation-name:fadeInLeft}
+/* .l-slide,.r-slide{visibility:hidden;animation-duration:2s;animation-name:fadeInLeft}
 .r-slide{animation-name:fadeInRight}
 .in-fade,.up-slide{visibility:hidden;animation-duration:1s;animation-name:fadeInUp}
 .in-fade{animation-duration:4s;animation-name:fadeIn}
-
-
+*/
 .blog-section .box-2.zoomIn,.solution-section .box-2.up-slide,.writing2-main-section .band-score,.writing2-main-section .p-words{animation-delay:.4s}
 .blog-section .box-3.zoomIn,.solution-section .box-3.up-slide,.writing2-main-section .boxes .box-1{animation-delay:.7s}
 .text--folding [data-scroll=out] .char{-webkit-transform:rotateX(90deg);transform:rotateX(90deg);-webkit-transform-origin:bottom;transform-origin:bottom}
@@ -531,7 +532,7 @@ header a.nav-link{font-family:"General Sans",sans-serif;font-style:normal;font-w
 header a.nav-link.active,header a.nav-link:hover{color:#ff2c76}
 header .dropdown-item.active{color:#ff2c76;background-color:transparent}
 header .social-icon li a:not(.btn-1){height:44px;width:44px;padding:14px;box-shadow:var(--btn-shadow);border-radius:50px;display:flex;justify-content:center;align-items:center;background:#f1f0fe}
-header .social-icon li .btn-1{padding:14px 40px;font-size:16px;font-weight:400;letter-spacing:1px;color:#fff;transition:.4s;background: linear-gradient(93.12deg, #F9508B 0%, #D91359 100%);box-shadow: -5px -5px 8px rgba(255, 255, 255, 0.22), 5px 5px 10px rgba(0, 0, 0, 0.18);border-radius: 50px;}
+header .social-icon li .btn-1{padding:14px 40px;font-size:16px;font-weight:400;letter-spacing:1px;color:#fff;transition:.4s;background:linear-gradient(93.12deg,#F9508B 0%,#D91359 100%);box-shadow:-5px -5px 8px rgba(255,255,255,0.22),5px 5px 10px rgba(0,0,0,0.18);border-radius:50px;}
 header .social-icon li .btn-1:hover{background:linear-gradient(268deg,#f9508b 0,#d91359 100%)}
 header .social-icon li:last-child{margin:auto}
 header .social-icon li{padding:0 5px}
@@ -554,7 +555,7 @@ header .mobile-menu{order:3}
 .hero-section .content .img-combo span{font-weight:700;font-size:18px;line-height:22px;color:#25242b}
 .hero-section .content .p2{font-weight:500;font-size:16px;line-height:22px;color:#413f63}
 .hero-section .content .dbl-btn{margin-top:15px}
-.button,.hero-section .content .demo-btn{transition:.4s;background: linear-gradient(93.12deg, #F9508B 0%, #D91359 100%);box-shadow: -5px -5px 8px rgba(255, 255, 255, 0.22), 5px 5px 10px rgba(0, 0, 0, 0.18) !important;border-radius: 50px;}
+.button,.hero-section .content .demo-btn{transition:.4s;background:linear-gradient(93.12deg,#F9508B 0%,#D91359 100%);box-shadow:-5px -5px 8px rgba(255,255,255,0.22),5px 5px 10px rgba(0,0,0,0.18) !important;border-radius:50px;}
 .hero-section .content .demo-btn{padding:16px 30px;color:#fff;margin-right:20px}
 .button{text-align:center;padding:16px 40px;display:inline-block;letter-spacing:1px;overflow:hidden;position:relative}
 .books-section ul li .price .color-btn,.button,.button.bg-white,.hero-section .content .demo-btn{box-shadow:-5px -5px 8px rgba(255,255,255,.22),5px 5px 10px rgba(0,0,0,.18)}
@@ -623,7 +624,7 @@ header .mobile-menu{order:3}
 .solution-section h2{font-weight:400;line-height:47px;color:#0e0d1e;margin-bottom:30px}
 .solution-section h2 span,.study-visa-form h2 span,.study-visa-main .content-box h1 span,.testimonial-section h2 span{font-weight:700}
 .solution-section .content-box{text-align:center;padding:15px 25px 50px;margin:auto;transition:4s;background:#f3f3fe;box-shadow:0 6px 30px rgba(0,0,0,.1);border-radius:16px}
-.solution-section .content-box h4{font-weight:700;font-size:20px;line-height:30px;text-align:center;text-transform:uppercase;color:#0e0d1e;padding: 20px 0 10px 0;}
+.solution-section .content-box h4{font-weight:700;font-size:20px;line-height:30px;text-align:center;text-transform:uppercase;color:#0e0d1e;padding:20px 0 10px 0;}
 .solution-section .bg-shape .shape-1{position:absolute;left:0;bottom:15px;z-index:-1;animation:moveup 8s infinite linear}
 .solution-section .bg-shape .shape-2{position:absolute;right:0;top:15px;z-index:-1;animation:movedown 8s infinite linear;animation-delay:1.5s}
 .solution-section .bg-shape .shape-3{position:absolute;left:40%;bottom:2%;z-index:-1;animation:movebounce 8s infinite linear}
@@ -890,7 +891,7 @@ footer{background:#38526a;padding-top:57px}
 .discover-box p,.need-box p{font-weight:400;color:#413f63}
 .discover-box h4,.need-box p{font-size:18px;line-height:25px;text-transform:capitalize}
 .immigration-need{background-color:#4268f2;padding-top:285px;padding-bottom:40px}
-.discover-section h2,.immigration-need h2{font-weight:400;font-size:36px; }
+.discover-section h2,.immigration-need h2{font-weight:400;font-size:36px;}
 .immigration-need h2{color:#fff}
 .immigration-need ul li{font-weight:500;font-size:18px;line-height:23px;text-transform:uppercase;color:#eff3ff;margin-top:25px;position:relative;padding-left:35px}
 .immigration-need ul li:before{position:absolute;content:"";background-image:url(../img/white-arrow.png);width:20px;height:18px;left:0;top:0}
@@ -898,10 +899,10 @@ footer{background:#38526a;padding-top:57px}
 .discover-section{background-image:url(../img/discover-section.png);position:relative}
 .discover-section h2{text-transform:capitalize;padding-bottom:20px}
 .discover-section .main-img{position:absolute;left:-10px;width:100%;bottom:0;max-width:330px}
-.discover-box{background:linear-gradient(180deg,#e4ecf9 0,#c7dbfc 100%);box-shadow:8px 8px 20px rgba(29,29,29,.2);border-radius:10px;padding:40px 15px 45px;height:265px}
+.discover-box{background:linear-gradient(180deg,#e4ecf9 0,#c7dbfc 100%);box-shadow:8px 8px 20px rgba(29,29,29,.2);border-radius:10px;padding:40px 15px;height:265px}
 .discover-box img{position:unset;padding-bottom:20px;padding-top:15px}
 .discover-box h4{font-style:normal;font-weight:700;font-size:24px;line-height:30px}
-.discover-box p{font-size:13px;line-height:22px;padding-bottom:24px}
+.discover-box p{font-size:15px;line-height:22px;padding-bottom:24px;max-width:70%;margin:auto;}
 .discover-box a{padding:10px 20px;font-size:15px;line-height:22px;text-transform:capitalize}
 .immigration-testimonial-section{background-color:#9848fe}
 .immigration-testimonial-section .testi-box{background-image:url(../img/testi-bg-12.png);background-size:cover;width:100%;height:100%;padding:43px}
@@ -962,10 +963,12 @@ footer{background:#38526a;padding-top:57px}
 .hero-ebook{background:#e4ecf9;padding-top:90px}
 .hero-ebook h1{font-weight:400;font-size:var(--fs-1);line-height:62px;color:#06042d}
 .hero-ebook h4{font-weight:400;font-size:28px;line-height:36px;text-transform:capitalize;color:#000;padding:10px 0 20px}
-.hero-ebook p{font-weight:500;font-size:var(--fs-2);line-height:29px;color:#413f63;padding-bottom:16px}
-.ebook-hero-content a{padding:26px 40px;font-size:16px;font-weight:500;color:#fff;background:#ff2c76;box-shadow:10px 0 30px rgba(0,186,199,.33);border-radius:100px}
+.hero-ebook p{font-weight:500;font-size:var(--fs-2);line-height:29px;color:#413f63;/* padding-bottom:16px;*/
+}
+.ebook-hero-content a{padding:20px;font-size:16px;font-weight:500;color:#fff;background:#ff2c76;box-shadow:10px 0 30px rgba(0,186,199,.33);border-radius:100px;display:flex;align-items:center;max-width:360px;justify-content:space-between;}
 .ebook-hero-content a span{background:#e8ecf0;box-shadow:6px 6px 20px rgba(0,0,0,.26);border-radius:50px;font-weight:500;font-size:16px;line-height:21px;letter-spacing:.05em;text-transform:uppercase;color:#06042d;padding:10px 25px;margin-left:10px}
 .hero-ebook .immi-map img{position:relative;margin-bottom:0;width:100%}
+.immigration-cta p{margin:0 !important;color:#fff;font-size:17px;padding-left:10px;}
 .heading-features h5::before{content:url(../img/head-line.svg);position:relative;bottom:3px;padding-right:10px}
 .heading-features h2{font-style:normal;font-weight:500;font-size:32px;line-height:44px;color:#272d3e}
 .heading-features p,.heading-features ul li{font-style:normal;font-weight:400;font-size:18px;line-height:32px;color:rgba(39,45,62,.8)}
@@ -1080,14 +1083,12 @@ header .navbar-brand .small-logo{display:block!important}
 .form-page .container{padding:unset}
 .form-page ul#tabs-nav li{margin-right:10px}
 .courses-dashbooared .card-section{grid-template-columns:repeat(2,1fr)}
-.btn-section .btn-boxes ul a{font-size:11px;margin:7px 8px 7px 7px;white-space:nowrap;display:inline-block}
-.btn-section .option-box{font-size:12px}
+.btn-section .btn-boxes ul a{font-size:15px;margin:7px;white-space:nowrap;display:inline-block;padding:10px 22px;}
+.btn-section .option-box{/* font-size:12px;*/
+}
 .know-your .content-box .btn-box{padding-top:0}
 .i-pr-hero{padding:40px 0}
-.button {
-   padding: 12px 35px;
-   font-size: 14px;
-}
+.button{padding:12px 35px;font-size:14px;}
 .in-hand-section .content-box ul li{font-size:16px!important;padding:15px;min-height:79px}
 .expertise-section .row{width:100%}
 header .sidepanel a:hover{color:#3b4753;box-shadow:none;background:#d8e4f6}
@@ -1095,13 +1096,12 @@ header .sidepanel a:hover{color:#3b4753;box-shadow:none;background:#d8e4f6}
 .dropdown-menu a{border:0!important;padding:7px 26px!important;font-size:20px!important}
 .resource-box{padding-top:200px!important}
 .box.box-bottom{margin:25px 0}
-
 .hero-immigration{padding:30px 0 10px}
 .immi-hero-content{order:2;text-align:center}
 .hero-immigration .immi-map{position:inherit}
 .hero-immigration .immi-map img{padding:15px}
 .immi-why-choose{margin:30px 0}
-.immi-why-choose h2{font-size:var(--fs-1);line-height:33px}
+.immi-why-choose h2{font-size:var(--fs-1);line-height:36px;}
 .immi-why-choose ul li{font-size:var(--fs-2);padding:8px 0}
 }
 @media only screen and (max-width:767px){footer .footer-col{margin-bottom:1px}
@@ -1110,7 +1110,7 @@ header .sidepanel a:hover{color:#3b4753;box-shadow:none;background:#d8e4f6}
 .resource-box .boxes{gap:30px;padding-top:50px}
 .know-your .col-md-5{order:2}
 .blog-section .blog-items{grid-template-columns:repeat(1,1fr)}
-.expertise-section .main-heading{font-size:26px;line-height: inherit;}
+.expertise-section .main-heading{font-size:26px;line-height:inherit;}
 .testi-slider .owl-item li{margin:20px auto}
 .testimonial-section .testi-title{text-align:center;padding:0 15px;margin:auto}
 .hero-section{padding-bottom:20px}
@@ -1161,7 +1161,7 @@ footer{padding:57px 0 0}
 .migrate-section .content-box{margin-top:0}
 .p-70{padding:35px 0}
 .immigration-box.immigration-need-left2 br,.immigration-need .img-box,.immigration-need-center h2 br,.immigration-need-center img{display:none}
-.immi-why-choose h2{font-size:30px;text-align:center}
+.immi-why-choose h2{font-size:25px;text-align:center}
 .need-content{padding:30px}
 .hero-immigration{padding:40px 0 10px}
 .still-confused .content-box{text-align:center}
@@ -1199,7 +1199,6 @@ header{/* background:red!important;*/
 .become-a-tutor-form{padding:0!important;background-color:#39526a!important;border:0}
 .become-a-tutor-form a.button{width:100%;display:block}
 .become-a-tutor-form .container{padding:30px 25px;box-shadow:none;border:0}
-
 }
 @media (max-width:575px){.hero-section .content h1{font-size:30px}
 .hero-section .content .mtl-btn{padding:16px;font-size:13px}
@@ -1217,7 +1216,7 @@ header{/* background:red!important;*/
 .p-80{padding:40px 0}
 header .openbtn{padding:3px 9px}
 header .social-icon li .btn-1{padding:9px 25px;font-size:14px}
-header{display:flex;align-items:center;backdrop-filter:blur(12px);}
+header{display:flex;align-items:center;backdrop-filter:blur(12px);background:#f1f0fe;}
 .mobile-features .mobile-view li{margin-bottom:20px}
 .features.desktop-features,.solution-section.desktop-solution-section{display:none}
 .mobile-solution-section .owl-carousel.owl-loaded{overflow:hidden}
@@ -1239,7 +1238,6 @@ header{display:flex;align-items:center;backdrop-filter:blur(12px);}
 .become-a-tutor-form form .form-group{margin-bottom:15px}
 .writing-main-section .img-box .box.box-2{margin:180px auto auto;width:100%}
 .writing-form form .group-1 img,.writing-form form .group-2 img{left:auto;right:0}
-
 .shape-dash{height:333px;position:absolute;top:925px;left:25px;z-index:-1}
 .need-content{border-radius:10px;padding:20px!important}
 .need-img-main{display:none}
@@ -1268,7 +1266,7 @@ header{display:flex;align-items:center;backdrop-filter:blur(12px);}
 .form-page ul#tabs-nav li{margin-top:25px;font-size:14px}
 .form-page p{font-size:16px}
 .btn-section .btn-boxes ul{flex-wrap:wrap;margin-top:10px}
-.btn-section .btn-boxes div{font-size:14px}
+.btn-section .btn-boxes div{font-size:18px;}
 .courses-main-section,.e-explore-section{padding:50px 0}
 .features ul li{justify-content:start}
 .features.desktop-feature{display:none}
@@ -1291,7 +1289,7 @@ header{display:flex;align-items:center;backdrop-filter:blur(12px);}
 .preparation-section .content-box ul li{font-size:18px;line-height:22px;margin-top:15px;padding-left:25px}
 .expertise-section .main-heading,.expertise-section h2,.migrate-section h2,.profile-section h2{font-size:25px;line-height:35px}
 .migrate-section ul li{margin-top:10px}
-.profile-section .content-box ul li{margin-top:18px;font-size:18px}
+.profile-section .content-box ul li{margin-top:18px;font-size:18px !important;}
 .still-confused{padding-top:45px}
 .tutor-box-section{padding-top:0}
 .immigration-need{padding-top:150px}
@@ -1369,66 +1367,26 @@ button.fee-calbtn{margin-top:-55px !important;}
 .expertise-section .row.fee-row{width:100%;max-width:80%;margin:auto}
 .fee-head p{font-size:17px;font-weight:500}
 .ebooks-slider-head{background:#c6f4f8;padding:7px 20px;border-radius:50px;width:fit-content;text-shadow:10px 4px 4px rgba(0,0,0,.25);display:table;margin:auto auto 14px}
-
-.planPrice label{ cursor: pointer; width:100%;background:#e4ecf9;box-shadow:-4px -4px 4px rgba(255,255,255,.3),4px 4px 4px rgba(0,0,0,.12),inset -2px -2px 4px rgba(0,0,0,.05),inset 2px 2px 4px rgba(255,255,255,.1);border-radius:15px;margin-bottom:25px;padding:20px;}
-.planPrice h2{font-size:22px;font-weight:bold; color: #e12866;}
+.planPrice label{cursor:pointer;width:100%;background:#e4ecf9;box-shadow:-4px -4px 4px rgba(255,255,255,.3),4px 4px 4px rgba(0,0,0,.12),inset -2px -2px 4px rgba(0,0,0,.05),inset 2px 2px 4px rgba(255,255,255,.1);border-radius:15px;margin-bottom:25px;padding:20px;}
+.planPrice h2{font-size:22px;font-weight:bold;color:#e12866;}
 .planPrice h4,.planPrice h3{font-size:18px;display:inline-flex;margin-right:10px;}
 .planPrice input:checked + label{background:#e12866;}
 .planPrice input:checked + label *{color:#fff !important;}
-.planPrice input { display: none;
-   position: absolute;
-}
-.topic-field textarea {
-   border: 0;
-   border-radius: 9px !important;
-   height: 270px;
-   padding: 20px;
-   text-align: center;
-   font-size: 18px;
-}
-
-
+.planPrice input{display:none;position:absolute;}
+.topic-field textarea{border:0;border-radius:9px !important;height:270px;padding:20px;text-align:center;font-size:18px;}
 /*Contact page left side*/
-.contact-page-left-side, .contact-page-right, .google-map-area .col-12 {
-   padding: 0;
-}
-
-.contact-page-left-side-wrap {
-   padding: 50px;
-}
-.contact-info-item {
-   width: 300px;
-   margin-bottom: 25px;
-}
-
+.contact-page-left-side,.contact-page-right,.google-map-area .col-12{padding:0;}
+.contact-page-left-side-wrap{padding:50px;}
+.contact-info-item{width:300px;margin-bottom:25px;}
 /*Contact page right side*/
-.contact-form-area {
-   padding: 50px;
-   /* border-left: 1px solid #EBE9E2; */
+.contact-form-area{padding:50px;/* border-left:1px solid #EBE9E2;*/
 }
-.contact-form-title {
-   margin-bottom: 35px;
-}
-.contact-form-area textarea.form-control {
-   min-height: 134px;
-}
-
+.contact-form-title{margin-bottom:35px;}
+.contact-form-area textarea.form-control{min-height:134px;}
 /*Google Map area*/
-.google-map-area iframe {
-   width: 100%;
-   height: 529px;
-}
-.contact-form-area input, .contact-form-area select,
- .contact-form-area textarea {
-   padding: 15px;
-   border-radius: 10px;
-   border: 1px solid #f0f0f0;
-   background: #ffffff;
-   margin-bottom: 20px;
-}
-
+.google-map-area iframe{width:100%;height:529px;}
+.contact-form-area input,.contact-form-area select,.contact-form-area textarea{padding:15px;border-radius:10px;border:1px solid #f0f0f0;background:#ffffff;margin-bottom:20px;}
 @media only screen and (max-width:380px){header .social-icon li{object-fit:contain!important}
-
 header .social-icon li .btn-1{padding:8px 18px;font-size:13px}
 header .openbtn{padding:0 6px}
 .hero-section .content .demo-btn,.hero-section .content .mtl-btn{padding:12px 14px;font-size:12px}
@@ -1449,16 +1407,19 @@ a.navbar-brand img{max-width:150px!important;display:block}
 .discover-box{height:auto;margin-bottom:18px}
 .btn-section .btn-boxes{display:block}
 .hero-ebook .immi-map img{position:relative;margin-bottom:0;width:100%;background:#fff;border-radius:20px}
-.ebook-hero-content a{display:block;text-align:center}
+.ebook-hero-content a{padding:10px 10px;/* display:block;*/
+/* text-align:center;*/
+margin-top:29px;}
 .immigration-cta{margin:0 0 30px}
 .btn-section .btn-boxes ul a{margin-left:0!important;margin-top:4px}
 .cart-main-section .head-box h1{font-size:40px;line-height:inherit}
-.contact-page-left-side-wrap, .contact-form-area {
-   padding: 0 15px;
-   padding-bottom: 40px;
+.studytext{text-align:center;}
+.contact-page-left-side-wrap,.contact-form-area{padding:0 15px;padding-bottom:40px;}
 }
-}
-@media (max-width:767px){.abroad-section .container-fluid{max-width:540px}
+@media (max-width:767px){.planPrice h4,.planPrice h3{font-size:15px;}
+.planPrice h2{font-size:20px;margin-bottom:5px;}
+.modal-dialog{margin:15px;}
+.abroad-section .container-fluid{max-width:540px}
 .yellow-box .content-box{box-shadow:none;padding:0}
 .in-hand-section .content-box ul li{min-height:auto}
 .preparation-section h2{font-size:25px;line-height:inherit;margin-top:22px}
@@ -1467,7 +1428,7 @@ a.navbar-brand img{max-width:150px!important;display:block}
 .profile-section .content-box{box-shadow:none;padding:0;background:0 0!important}
 .pr-profile{padding-left:16px;margin-top:30px}
 .profile-section h2{margin-bottom:10px}
-.immi-why-choose .libox{padding:15px;font-size:13px}
+.immi-why-choose .libox{padding:15px;font-size:16px;}
 .bolg-box img{width:100%}
 .solution-section .content-box{padding:20px!important}
 .solution-section .img-box{min-height:325px}
@@ -1483,45 +1444,25 @@ div#accordionExample{padding:0}
 .cart-main-section .content-box-2{display:block}
 .cart-main-section .content-box-2 .second{margin-left:0;margin-top:20px}
 .heading{font-size:29px}
+.writing2-main-section .boxes .box .heading{font-size:17px;}
 button.fee-calbtn{margin-top:5px !important;}
-.closepop {
-   position: absolute;
-   top: -20px;
-   right: 0px;
-   background: 0 0;
-   border: 0;
-   font-size: 44px;
-   line-height: 32px;
-   background: #fff;
-   padding: 0px;
-   border-radius: 10px;
-   width: 50px;
-   height: 40px;
-   box-shadow: 0 0 10px 3px #0001;
-   line-height: 38px !important;
-}
-.contactbtn { 
-   width: 100%;
-}
+.closepop{position:absolute;top:-20px;right:0px;background:0 0;border:0;font-size:44px;line-height:32px;background:#fff;padding:0px;border-radius:10px;width:50px;height:40px;box-shadow:0 0 10px 3px #0001;line-height:38px !important;}
+.contactbtn{width:100%;}
 }
 @media (max-width:575px){.container{padding-left:25px;padding-right:25px}
 header .sidepanel a{padding:13px 30px;font-size:19px}
 header .sidepanel{max-width:70%!important;margin-left:-10px}
 .abroad-section .container-fluid{padding:0 25px}
 .footContain{margin-bottom:0}
+.ebook-hero-content a span{padding:10px 15px;}
 .courses-dashbooared .card-section{grid-template-columns:repeat(1,1fr)}
 .cart-main-section .content-box-2{padding:20px;box-shadow:-6px -6px 20px #fff,6px 6px 20px rgba(0,0,0,.12),inset -2px -2px 10px #fff,inset 3px 3px 10px rgba(0,0,0,.1)}
 .cart-main-section .content-box-2 .first .course-name{font-size:25px;padding-top:40px}
 .cart-main-section .content-box{padding:20px}
 .premiun-actions{display:block!important}
 .premiun-actions a{width:100%;display:block;margin:15px 0 0!important}
-.topic-field + .button {
-   width: 100%;
+.topic-field + .button{width:100%;}
+.hero-immigration .content{padding-right:0;}
+.modal-content{padding:25px !important;}
 }
-.hero-immigration .content {
-   padding-right: 0;
-}
-.modal-content {
-   padding: 25px !important;
-}
-}
+ƒ
