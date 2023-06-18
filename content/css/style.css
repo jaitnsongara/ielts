@@ -1221,7 +1221,7 @@ header{/* background:red!important;*/
 .p-80{padding:40px 0}
 header .openbtn{padding:3px 9px}
 header .social-icon li .btn-1{padding:9px 25px;font-size:14px}
-header{display:flex;align-items:center;backdrop-filter:blur(12px);background:#f1f0fe;}
+header{display:flex;align-items:center;backdrop-filter: none !important;background:#f1f0fe;}
 .mobile-features .mobile-view li{margin-bottom:20px}
 .features.desktop-features,.solution-section.desktop-solution-section{display:none}
 .mobile-solution-section .owl-carousel.owl-loaded{overflow:hidden}
@@ -1453,6 +1453,18 @@ div#accordionExample{padding:0}
 button.fee-calbtn{margin-top:5px !important;}
 .closepop{position:absolute;top:-20px;right:0px;background:0 0;border:0;font-size:44px;line-height:32px;background:#fff;padding:0px;border-radius:10px;width:50px;height:40px;box-shadow:0 0 10px 3px #0001;line-height:38px !important;}
 .contactbtn{width:100%;}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right{
+   backdrop-filter:none !important;
+   /* filter: contrast(0.5); */
+}
+.swiper .swiper-slide{
+   backdrop-filter:none !important;
+   /* filter: contrast(0.5); */
+}
+
+
 }
 @media (max-width:575px){.container{padding-left:25px;padding-right:25px}
 header .sidepanel a{padding:13px 30px;font-size:19px}
