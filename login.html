@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Topic</title>
+   <title>Login</title>
    <link rel="stylesheet" href="content/css/bootstrap.min.css">
    <link rel="stylesheet" href="content//css/owl.carousel.min.css">
    <link rel="stylesheet" href="content/css/style.css">
@@ -89,7 +89,7 @@
                   <li><a href=""><img src="content/img/search-bar.png" alt=""></a></li>
                   <li><a href="cart.html"><img src="content/img/cart.png" alt=""></a></li>
                   <li><a href="login.html"><img src="content/img/user.png" alt=""></a></li>
-                  <li class="d-none d-lg-block"><a class="btn-1" href="topic.html">WRITING</a></li>
+                  <li class="d-none d-lg-block"><a class="btn-1" href="writing-2.html">WRITING</a></li>
                </ul>
             </nav>
          </div>
@@ -97,16 +97,55 @@
    </header>
 
 
-   <div class="tpc-container py-5" >
-      <div class="container py-0 py-lg-5" >
-         <h2 class="heading text-center" ><span>Lets Generate a Random Topic</span></h2>
-         <div class="my-4 py-3 topic-field" >
-            <textarea class="form-control w-100 rounded" placeholder="Type or paste an essay question (topic)" ></textarea>
+   <div class="loginwrap py-4 py-lg-1">
+   <div class="container">
+      <div class="row align-items-center">
+         <div class="col-lg-5">
+            <form method="POST" action="http://127.0.0.1:8000/login">
+               <input type="hidden" name="_token" value="h0D3tuSyfk7SEKfu3Z9DubttzUgKZDhS5djsQ6Nc">
+               <h5 class="mb-1">Sign In</h5>
+               <p class="font-14 mb-30">New User ? <a href="http://127.0.0.1:8000/sign-up"
+                     class="color-hover text-decoration-underline font-medium">Create an Account</a></p>
+      
+               <div class="row mb-30">
+                  <div class="col-md-12">
+                     <label class="label-text-title color-heading font-medium font-16 mb-3">Email or Phone</label>
+                     <input type="text" name="email" value="" class="form-control email"
+                        placeholder="Type your email or phone number">
+                  </div>
+               </div>
+               <div class="row mb-30">
+                  <div class="col-md-12">
+                     <label class="label-text-title color-heading font-medium font-16 mb-3">Password</label>
+                     <div class="form-group mb-0 position-relative">
+                        <input class="form-control password" name="password" value="" placeholder="*********" type="password">
+                        <span class="toggle cursor fas fa-eye pass-icon"></span>
+                     </div>
+      
+                  </div>
+               </div>
+      
+               <div class="row mb-30">
+                  <div class="col-md-12"><a href="http://127.0.0.1:8000/forget-password"
+                        class="text-dark m-auto d-table mt-3 color-hover text-decoration-underline font-medium">Forgot Password?</a></div>
+               </div>
+               <div class="row mb-2">
+                  <div class="col-md-12">
+                     <button type="submit" class="w-100 button mt-4 text-uppercase border-0">Sign
+                        In</button>
+                  </div>
+               </div>
+      
+      
+            </form>
          </div>
-         <a href="writing-2.html" class="button mt-4 m-auto d-table border-0 text-uppercase" ><span>Generate topic</span></a>
+         <div class="col-lg-7 p-0 d-none d-lg-block">
+            <img class="loginbg img-fluid" src="./content/img/loginbg.webp" />
+         </div>
       </div>
+      
    </div>
-
+   </div>
 
 
    <footer>
@@ -121,19 +160,19 @@
                <h4 class="foot-title">Customer Support</h4>
                <ul>
                   <li><a href="tel:9289209996" class="foot-social-link">
-                          <div class="foot-social-icon"><img src="content/img/f-call.png" alt=""></div>
-                          +91 9289209996
-                      </a></li>
-                      
+                        <div class="foot-social-icon"><img src="content/img/f-call.png" alt=""></div>
+                        +91 9289209996
+                     </a></li>
+
                   <li><a href="whatsapp://send?abid=9289206669&text=Hello!" class="foot-social-link">
-                          <div class="foot-social-icon"><img src="content/img/f-whats.png" alt=""></div>+91 92892
-                          06669
-                      </a></li>
+                        <div class="foot-social-icon"><img src="content/img/f-whats.png" alt=""></div>+91 92892
+                        06669
+                     </a></li>
                   <li><a href="mailto:info@myieltstutor.com" class="foot-social-link">
-                          <div class="foot-social-icon"><img src="content/img/f-mail.png" alt=""></div>
-                          info@myieltstutor.com
-                      </a></li>
-              </ul>
+                        <div class="foot-social-icon"><img src="content/img/f-mail.png" alt=""></div>
+                        info@myieltstutor.com
+                     </a></li>
+               </ul>
                <div class="foot-social-icon-down">
                   <div class="foot-social-icon-down-item"><img src="content/img/f.png" alt=""></div>
                   <div class="foot-social-icon-down-item"><img src="content/img/twitter.png" alt=""></div>
@@ -186,13 +225,16 @@
          document.getElementById("mySidepanel").style.width = "90%";
          document.getElementById("mySidepanel").style.left = "10px";
       }
+
       function closeNav() {
          document.getElementById("mySidepanel").style.width = "0";
          document.getElementById("mySidepanel").style.left = "-15px";
       }
+
       $('.dropdown-toggle').click(function () {
          $('.dropdown-menu').fadeToggle();
       });
+
    </script>
 </body>
 

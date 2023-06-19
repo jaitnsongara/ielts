@@ -9,7 +9,12 @@
 .in-fade{visibility:hidden;animation-duration:4s;animation-name:fadeIn;}
 .solution-section .box-2.up-slide,.blog-section .box-2.zoomIn,.writing2-main-section .p-words,.writing2-main-section .band-score{animation-delay:0.4s;}
 .solution-section .box-3.up-slide,.blog-section .box-3.zoomIn,.writing2-main-section .boxes .box-1{animation-delay:0.7s;}
+
+
+
 @keyframes animationFramesOne{0%,to{-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+
+
 20%{-webkit-transform:translate(73px,-1px) rotate(36deg);transform:translate(73px,-1px) rotate(36deg)}
 40%{-webkit-transform:translate(141px,72px) rotate(72deg);transform:translate(141px,72px) rotate(72deg)}
 60%{-webkit-transform:translate(83px,122px) rotate(108deg);transform:translate(83px,122px) rotate(108deg)}
@@ -65,6 +70,13 @@ body{font-family:"DM Sans",sans-serif;background:#f3f3fe}
 a{text-decoration:none}
 ul{padding-left:0;list-style:none}
 p,ul{margin-bottom:0}
+.preloader{position:fixed;top:0;left:0;width:100%;height:100vh;display:flex;align-items:center;justify-content:center;z-index:999999;background:#e3ecf9;}
+.preloader p{font-size:22px;text-transform:uppercase;text-align:center;font-weight:800;padding-top:20px;}
+.preloader{text-align:center;}
+.offer-Pop{background-color:#4c4c4c66;height:100vh;position:fixed;top:0;display:flex;align-items:center;justify-content:center;width:100%;z-index:9999;backdrop-filter:blur(4px);}
+.offer-pop-inner{padding:40px;background:#fff;border-radius:9px;margin:auto;max-width:580px;text-align:center;}
+.offerbar{background:#F66200;padding:12px;color:#fff;text-align:center;}
+.offerbar p a{color:#fff;text-transform:uppercase;padding:20px;text-decoration:underline;}
 .immi-map{margin-bottom:-300px;}
 .custome_slide.owl-carousel .owl-item.active.center .main-reviewimage{border:2px solid #fff}
 #slide-testimonal .active.center .main-reviewimage img{opacity:1}
@@ -102,7 +114,10 @@ h2 span{font-weight:700}
 .live-class .live-in .live-img img{width:100%;height:100%}
 .live-class .live{display:flex;background-color:#fff;position:absolute;left:23px;top:22.12px;border-radius:4px;padding:0 10px}
 .live-class .live p{font-size:16px;color:#0cbb1d}
-.live-class .text{margin-top:30px}
+.liveOuter{background:#F3F3FE;box-shadow:0px 6px 30px rgba(0,0,0,0.1);border-radius:12px;padding:15px;}
+.liveOuter li{display:flex;align-items:center;}
+.liveOuter li p{margin:5px 0!important;padding-left:11px;}
+.live-class .text{margin-top:10px}
 .live-class .text h1{font-size:26px}
 .live-class .text .watch{font-size:16px;color:#989898}
 .live-img video{height:100%;width:100%;object-fit:cover;border-radius:10px;}
@@ -115,6 +130,7 @@ h2 span{font-weight:700}
 .q-bar input{width:100%;display:block;border-radius:7px;padding:14px 20px;border:0}
 button.sendQuestion{position:absolute;bottom:21px;right:30px;background:0 0;border:0;padding:10px}
 .q-lists ul li{padding:10px 20px;border-radius:4px 20px 20px 20px;width:fit-content;margin-bottom:15px}
+.button.sm{font-size:15px;padding:7px 20px;}
 @media (min-width:480px){.mobile-blog-section{display:none}
 }
 @media (min-width:576px){.features.mobile-features,.solution-section.mobile-solution-section{display:none}
@@ -200,8 +216,6 @@ header .navbar-brand .small-logo{display:block!important}
 .form-page ul#tabs-nav li{margin-right:10px}
 .courses-dashbooared .card-section{grid-template-columns:repeat(2,1fr)}
 .btn-section .btn-boxes ul a{font-size:11px;margin-right:8px}
-.btn-section .option-box{/* font-size:12px;*/
-}
 .know-your .content-box .btn-box{padding-top:0}
 .i-pr-hero{padding:40px 0}
 .button{padding:16px 20px}
@@ -700,7 +714,9 @@ footer{background:#38526a;padding-top:57px}
 .study-visa-advantage .content-box li img{padding-top:5px}
 .study-visa-advantage .content-box.box-2{margin-top:50px;background:#f3f3fe;box-shadow:-6px -6px 20px #fff,6px 6px 20px rgba(0,0,0,.12),inset -2px -2px 10px #fff,inset 3px 3px 10px rgba(0,0,0,.1);margin-left:30px}
 .study-visa-form{padding:0 15px 70px}
-.study-visa-form .container{border:0;border-radius:10px;text-align:center;padding:60px 150px;background:#f3f3fe}
+.study-visa-form .container{border:0;border-radius:10px;text-align:center;/* padding:60px 150px;*/
+/* background:#f3f3fe;*/
+}
 .study-visa-form h2{font-weight:400;font-size:calc(1rem + 1.5vw);line-height:47px;text-transform:capitalize;color:#06042d}
 .study-visa-form p{padding:20px 0;color:#7f858a;font-weight:400;font-size:18px;line-height:28px;text-align:center}
 .study-visa-form form input{height:55px;background-color:transparent;border-radius:12px}
@@ -796,7 +812,7 @@ footer{background:#38526a;padding-top:57px}
 .g-traninig .owl-nav .owl-next span:before,.g-traninig .owl-nav .owl-prev span:before{content:"";position:absolute;width:30px;height:30px;background:#ff2c7687;top:0;z-index:-26;border-radius:50px}
 .g-traninig .owl-nav .owl-prev span:before{left:0}
 .g-traninig .owl-nav .owl-next span:before{right:0}
-.i-pr-hero{padding-top:100px;padding-bottom:100px;background-color:#e4ecf9;position:relative;overflow:hidden}
+.i-pr-hero{padding-top:40px;padding-bottom:40px;background-color:#e4ecf9;position:relative;overflow:hidden}
 .i-pr-hero .content-box h1{font-family:"DM Sans";font-style:normal;font-weight:400;font-size:36px}
 .abroad-section .content-box h2 span,.g-traninig h2,.i-pr-hero .content-box h1 span,.in-hand-section h2 span{font-weight:700}
 .i-pr-hero .content-box p{font-weight:700;font-size:18px;line-height:28px;color:#413f63;padding:20px 0 60px}
@@ -935,7 +951,7 @@ footer{background:#38526a;padding-top:57px}
 .immigration-need-left1 img{position:absolute;right:-100px;top:50px}
 .immigration-need-right1 img{position:absolute;top:50px;left:-100px}
 .immigration-need-center img{z-index:-1}
-.demo-form{padding:70px 0}
+.demo-form{padding:0;}
 .demo-form .container,.demo-form form .btn-box,.demo-form p{text-align:start}
 .demo-form .checkbox{margin-left:40px}
 .cart-main-section .checkbox input,.demo-form .checkbox input{height:22px;width:22px;top:5px;position:relative;right:10px}
@@ -1014,6 +1030,123 @@ footer{background:#38526a;padding-top:57px}
 div#btn-slider .dropbtn{white-space:nowrap}
 .upgradeToPremium{background:#336799;border:1px solid #336799;border-radius:10px;padding:40px!important}
 .upgradeToPremium h2{font-size:19px;padding-bottom:20px;color:#fff;}
+h2.heading.sm{font-size:25px;}
+
+/*-------------------------------------------
+    40. Sign Up Page Start
+-------------------------------------------*/
+.sign-up-page {
+   overflow-x: hidden;
+}
+.sign-up-page .row .col-md-5, .sign-up-page .row .col-md-7 {
+   padding: 0;
+}
+.sign-up-left-content {
+   background-image: url("../img/sign-up-page-bg.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding: 30px 100px;
+}
+.sign-up-bottom-img {
+   margin-top: 130px;
+}
+.sign-up-bottom-img img {
+   height: auto;
+   width: 561px;
+}
+.sign-up-left-content, .sign-up-right-content {
+   min-height: 100vh;
+   height: 100%;
+}
+.sign-up-right-content {
+   align-items: center;
+   display: flex;
+}
+.sign-up-right-content form {
+   width: 479px;
+   margin: 0 auto;
+}
+.sign-up-left-content p {
+   font-size: 26px;
+   line-height: 137%;
+   color: rgba(255, 255, 255, 0.86);
+   margin-top: 100px;
+   padding-right: 115px;
+}
+
+/*Show/Hide Password*/
+.sign-up-right-content .pass-icon {
+   font-size: 13px;
+   float: right;
+   top: 18px;
+   position: absolute;
+   right: 10px;
+}
+.google-login {
+   background-color: #DB4437!important;
+   border-color: #DB4437!important;
+}
+.google-login:hover {
+   background-color: var(--white-color)!important;
+   color: #DB4437!important;
+   border-color: #DB4437!important;
+}
+.facebook-login {
+   background-color: #3b5998!important;
+   border-color: #3b5998!important;
+}
+.facebook-login:hover {
+   background-color: var(--white-color)!important;
+   color: #3b5998!important;
+   border-color: #3b5998!important;
+}
+.twitter-login {
+   background-color: #55acee!important;
+   border-color: #55acee!important;
+}
+.twitter-login:hover {
+   background-color: var(--white-color)!important;
+   color: #55acee!important;
+   border-color: #55acee!important;
+}
+
+
+.loginwrap form input {
+   padding: 15px 20px;
+   border-radius: 10px;
+   border: 0;
+}
+
+.loginwrap form label {
+   margin-bottom: 7px !important;
+   margin-top: 30px;
+}
+
+.loginwrap form .form-group {
+   position: relative;
+}
+
+span.toggle {
+   position: absolute;
+   top: 19px;
+   right: 20px;
+}
+
+
+.loginwrap form a {
+   color: #f1427e;
+}
+.loginbg {
+   max-height: 600px;
+   width: 100%;
+   object-fit: cover;
+   right: -9%;
+   position: relative;
+}
+/* page free demo css */
+div#freeDemo .modal-dialog{width:100% !important;max-width:800px !important;}
+.study-visa-form.demo-form .container{padding:0;background:transparent;}
 @media (min-width:480px){.mobile-blog-section{display:none}
 }
 @media (min-width:576px){.features.mobile-features,.solution-section.mobile-solution-section{display:none}
@@ -1206,12 +1339,15 @@ footer{padding:57px 0 0}
 .migrate-section .col-md-6:first-child{order:2}
 .migrate-section .col-md-6:last-child{order:1}
 header .openbtn{font-size:30px;padding:2px 10px 7px!important;line-height:36px}
-header{/* background:red!important;*/
-}
+ 
 .resource-box{padding-bottom:0!important}
 .become-a-tutor-form{padding:0!important;background-color:#39526a!important;border:0}
 .become-a-tutor-form a.button{width:100%;display:block}
 .become-a-tutor-form .container{padding:30px 25px;box-shadow:none;border:0}
+.i-pr-hero .content-box h1{line-height:33px;font-size:25px;text-align:center}
+.abroad-section .content-box{padding-top:30px;margin-bottom:40px}
+.i-pr-hero .content-box p{font-size:16px;text-align:center;padding:14px 0}
+.i-pr-hero .content-box .btn-box a{display:block}
 }
 @media (max-width:575px){.hero-section .content h1{font-size:30px}
 .hero-section .content .mtl-btn{padding:16px;font-size:13px}
@@ -1266,8 +1402,6 @@ header{display:flex;align-items:center;backdrop-filter:none !important;backgroun
 .e-explore-section .content-box{width:100%;padding-top:0}
 .e-explore-section form input{margin-top:50px}
 .e-explore-section h1,.g-traninig h2,.tutor-main-section h1{font-size:36px}
-.i-pr-hero .content-box h1{line-height:33px;font-size:25px;text-align:center}
-.abroad-section .content-box{padding-top:30px;margin-bottom:40px}
 .cart-main-section .content-box-2 .first .box,.e-explore-section form,.expertise-section h2{width:100%}
 .study-visa-form form .btn-box{padding-bottom:0}
 .e-explore-section p{padding-top:0}
@@ -1309,7 +1443,6 @@ header{display:flex;align-items:center;backdrop-filter:none !important;backgroun
 .immigration-box p{font-size:inherit}
 .discover-section{padding:40px 0}
 .imigration-need-1{margin-bottom:-120px}
-.i-pr-hero .content-box p{font-size:16px;text-align:center;padding:14px 0}
 .profile-section .col-md-6:not(:first-child) .content-box{margin-top:10px}
 .pr-profile{margin-top:10px}
 .expertise-section .accordion-item{padding:13px 16px}
@@ -1431,7 +1564,8 @@ margin-top:29px;}
 }
 @media (max-width:767px){.planPrice h4,.planPrice h3{font-size:15px;}
 .planPrice h2{font-size:20px;margin-bottom:5px;}
-.modal-dialog{margin:15px;}
+.modal-dialog{padding:37px 16px;margin:0 auto;}
+.study-visa-form p{padding:0;}
 .abroad-section .container-fluid{max-width:540px}
 .yellow-box .content-box{box-shadow:none;padding:0}
 .in-hand-section .content-box ul li{min-height:auto}
@@ -1459,14 +1593,15 @@ div#accordionExample{padding:0}
 .heading{font-size:29px}
 .writing2-main-section .boxes .box .heading{font-size:17px;}
 button.fee-calbtn{margin-top:5px !important;}
-.closepop{position:absolute;top:-20px;right:0px;background:0 0;border:0;font-size:44px;line-height:32px;background:#fff;padding:0px;border-radius:10px;width:50px;height:40px;box-shadow:0 0 10px 3px #0001;line-height:38px !important;}
+.closepop{position:absolute;top:-20px;right:0px;background:0 0;border:0;font-size: 36px;line-height:32px;background:#fff;padding:0px;border-radius:10px;width:50px;height:40px;box-shadow:0 0 10px 3px #0001;line-height: 35px !important;}
 .contactbtn{width:100%;}
 .swiper-3d .swiper-slide-shadow-left,.swiper-3d .swiper-slide-shadow-right{backdrop-filter:none !important;/* filter:contrast(0.5);*/
 }
 .swiper .swiper-slide{backdrop-filter:none !important;/* filter:contrast(0.5);*/
 }
 }
-@media (max-width:575px){.container{padding-left:25px;padding-right:25px}
+@media (max-width:575px){
+  .container{padding-left:25px;padding-right:25px}
 header .sidepanel a{padding:13px 30px;font-size:19px}
 header .sidepanel{max-width:70%!important;margin-left:-10px}
 .abroad-section .container-fluid{padding:0 25px}
